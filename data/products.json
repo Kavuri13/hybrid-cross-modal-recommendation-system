@@ -1,0 +1,82 @@
+[
+  {
+    "id": "dress_001",
+    "title": "Elegant Red Evening Dress",
+    "image": "dress_001.jpg",
+    "category": "Dresses",
+    "price": 89.99,
+    "description": "Beautiful red evening dress perfect for special occasions"
+  },
+  {
+    "id": "shoes_001",
+    "title": "Black Leather Boots",
+    "image": "shoes_001.jpg", 
+    "category": "Shoes",
+    "price": 129.99,
+    "description": "Premium black leather boots with comfortable fit"
+  },
+  {
+    "id": "bag_001",
+    "title": "Designer Handbag",
+    "image": "bag_001.jpg",
+    "category": "Bags", 
+    "price": 199.99,
+    "description": "Luxury designer handbag with premium materials"
+  },
+  {
+    "id": "shirt_001",
+    "title": "White Cotton Shirt",
+    "image": "shirt_001.jpg",
+    "category": "Shirts",
+    "price": 49.99,
+    "description": "Classic white cotton shirt for professional look"
+  },
+  {
+    "id": "jeans_001", 
+    "title": "Blue Denim Jeans",
+    "image": "jeans_001.jpg",
+    "category": "Jeans",
+    "price": 79.99,
+    "description": "Comfortable blue denim jeans with modern fit"
+  },
+  {
+    "id": "watch_001",
+    "title": "Sport Watch", 
+    "image": "watch_001.jpg",
+    "category": "Accessories",
+    "price": 159.99,
+    "description": "Water-resistant sport watch with multiple features"
+  },
+  {
+    "id": "jacket_001",
+    "title": "Winter Coat",
+    "image": "jacket_001.jpg", 
+    "category": "Jackets",
+    "price": 189.99,
+    "description": "Warm winter coat with insulation and weather protection"
+  },
+  {
+    "id": "sneakers_001",
+    "title": "Running Sneakers",
+    "image": "sneakers_001.jpg",
+    "category": "Shoes", 
+    "price": 119.99,
+    "description": "Lightweight running sneakers with excellent support"
+  },
+  {
+    "id": "dress_002",
+    "title": "Summer Floral Dress",
+    "image": "dress_002.jpg",
+    "category": "Dresses",
+    "price": 69.99,
+    "description": "Light and breezy floral dress perfect for summer"
+  },
+  {
+    "id": "hat_001",
+    "title": "Baseball Cap",
+    "image": "hat_001.jpg",
+    "category": "Accessories",
+    "price": 24.99,
+    "description": "Classic baseball cap with adjustable strap"
+  }
+]
