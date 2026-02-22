@@ -1,0 +1,223 @@
+{
+  "project": {
+    "name": "Cross-Modal Fashion Recommendation System",
+    "version": "1.0.0",
+    "description": "Hybrid recommendation engine using CLIP embeddings + FAISS similarity search",
+    "author": "Final Year Project",
+    "created": "2026-02-23"
+  },
+  
+  "testing": {
+    "framework": "pytest + requests",
+    "test_count": 20,
+    "test_cases": [
+      {
+        "id": "TC-H01",
+        "name": "Red Sleeveless Dress",
+        "type": "Fashion Matching",
+        "input_images": 3,
+        "text_query": "red floral party dress",
+        "alpha": 0.6,
+        "expected_results": "Red dress variants (product_1, product_2, product_3)"
+      },
+      {
+        "id": "TC-H02",
+        "name": "Blue Denim Jacket",
+        "type": "Style Override",
+        "input_images": 3,
+        "text_query": "formal office blazer",
+        "alpha": 0.7,
+        "expected_results": "Formal blazers despite denim input"
+      },
+      {
+        "id": "TC-H03",
+        "name": "Black Plain T-Shirt",
+        "type": "Pattern Recognition",
+        "input_images": 3,
+        "text_query": "black graphic streetwear t shirt",
+        "alpha": 0.65,
+        "expected_results": "Black streetwear t-shirts"
+      },
+      {
+        "id": "TC-H04",
+        "name": "Green Silk Saree",
+        "type": "Text-Dominant",
+        "input_images": 3,
+        "text_query": "traditional wedding outfit",
+        "alpha": 0.3,
+        "expected_results": "Traditional formal wear (text overrides image)"
+      },
+      {
+        "id": "TC-H05",
+        "name": "White Sneakers",
+        "type": "Balanced Match",
+        "input_images": 3,
+        "text_query": "black leather formal shoes",
+        "alpha": 0.5,
+        "expected_results": "Formal shoes matching text and visual semantics"
+      }
+    ],
+    "success_criteria": {
+      "all_tests_pass": true,
+      "average_query_time_ms": 250,
+      "success_rate_percent": 100,
+      "memory_usage_mb": 600
+    }
+  },
+  
+  "model_config": {
+    "clip": {
+      "architecture": "ViT-B/32",
+      "hidden_dim": 512,
+      "device": "cuda/cpu (auto-detect)",
+      "preprocess": "standard ImageNet normalization"
+    },
+    "faiss": {
+      "index_type": "HNSW",
+      "dimension": 512,
+      "metric": "InnerProduct",
+      "parameters": {
+        "M": 32,
+        "efConstruction": 200,
+        "efSearch": 100
+      }
+    },
+    "fusion": {
+      "formula": "V_hybrid = alpha * V_image + (1-alpha) * V_text",
+      "alpha_range": [0.0, 1.0],
+      "default_alpha": 0.5
+    }
+  },
+  
+  "api": {
+    "base_url": "http://localhost:8000",
+    "endpoints": [
+      {
+        "path": "/api/v1/search",
+        "method": "POST",
+        "description": "Hybrid cross-modal search",
+        "parameters": {
+          "text": "Optional text query",
+          "image": "Base64-encoded image",
+          "alpha": "Fusion weight (0-1)",
+          "top_k": "Number of results (1-100)"
+        },
+        "response": "List of products with similarity scores"
+      },
+      {
+        "path": "/api/v1/health",
+        "method": "GET",
+        "description": "Health check endpoint",
+        "response": "System status and loaded models"
+      }
+    ],
+    "docs_url": "http://localhost:8000/docs",
+    "openapi_url": "http://localhost:8000/openapi.json"
+  },
+  
+  "data": {
+    "products": {
+      "total_count": 112,
+      "categories": [
+        "dresses",
+        "jackets",
+        "t-shirts",
+        "sarees",
+        "shoes",
+        "hoodies",
+        "kurtis",
+        "blazers",
+        "shirts",
+        "skirts",
+        "boots",
+        "jeans"
+      ],
+      "file": "data/products.json"
+    },
+    "test_images": {
+      "input_count": 56,
+      "output_count": 60,
+      "input_dir": "data/inputs/",
+      "output_dir": "data/outputs/",
+      "metadata": "TEST_CASES_METADATA.json"
+    },
+    "index": {
+      "index_file": "index/products.index",
+      "metadata_file": "index/metadata.json",
+      "size_mb": 50
+    }
+  },
+  
+  "performance": {
+    "benchmarks": {
+      "query_time_ms": {
+        "average": 250,
+        "min": 180,
+        "max": 540,
+        "unit": "milliseconds"
+      },
+      "memory_usage": {
+        "clip_model_mb": 500,
+        "faiss_index_mb": 50,
+        "total_mb": 600
+      },
+      "throughput": {
+        "queries_per_second": 4,
+        "concurrent_users": 10
+      }
+    },
+    "test_results": {
+      "total_tests": 20,
+      "passed": 20,
+      "failed": 0,
+      "success_rate": "100%",
+      "test_images_processed": 56,
+      "recommendations_generated": 560
+    }
+  },
+  
+  "deployment": {
+    "local": {
+      "backend_port": 8000,
+      "frontend_port": 3000,
+      "command": "make setup && make run-backend && make run-frontend"
+    },
+    "docker": {
+      "compose_file": "docker-compose.yml",
+      "services": ["backend", "frontend", "nginx"],
+      "command": "docker compose up -d --build"
+    },
+    "cloud": {
+      "recommended_platform": "Azure App Service / AKS",
+      "recommended_region": "East US / West Europe",
+      "estimated_cost_per_month": "$50-200"
+    }
+  },
+  
+  "dependencies": {
+    "python": "3.9+",
+    "key_packages": [
+      "fastapi==0.104.1",
+      "uvicorn==0.24.0",
+      "torch==2.1.0",
+      "clip @ git+https://github.com/openai/CLIP.git",
+      "faiss-cpu==1.7.4",
+      "numpy==1.24.3",
+      "pillow==10.0.1",
+      "pydantic==2.4.2"
+    ],
+    "node": "18+",
+    "npm_packages": {
+      "next": "^14.0.0",
+      "react": "^18.0.0",
+      "typescript": "^5.0.0"
+    }
+  },
+  
+  "documentation": {
+    "readme": "README.md",
+    "api_docs": "http://localhost:8000/docs",
+    "test_results": "data/test_results.json",
+    "workflow_report": "data/WORKFLOW_REPORT.txt"
+  }
+}

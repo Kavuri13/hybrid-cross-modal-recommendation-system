@@ -1,7 +1,7 @@
 import faiss
 import numpy as np
 import json
-import os
+from pathlib import Path
 from typing import List, Dict, Any, Tuple, Optional
 import logging
 
@@ -18,10 +18,17 @@ class FAISSIndex:
         self.index_type = index_type
         self.index = None
         self.product_metadata = []
-        self.index_path = os.path.join(os.path.dirname(__file__), "..", "..", "..", "index")
-        
+        repo_root = None
+        for parent in [Path(__file__).resolve()] + list(Path(__file__).resolve().parents):
+            if (parent / "data").exists() and (parent / "index").exists():
+                repo_root = parent
+                break
+        if repo_root is None:
+            repo_root = Path(__file__).resolve().parents[3]
+        self.index_path = repo_root / "index"
+
         # Create index directory if it doesn't exist
-        os.makedirs(self.index_path, exist_ok=True)
+        self.index_path.mkdir(parents=True, exist_ok=True)
         
         self._initialize_index()
         self._load_existing_index()
@@ -49,13 +56,13 @@ class FAISSIndex:
         """
         Load existing index and metadata if available
         """
-        index_file = os.path.join(self.index_path, "products.index")
-        metadata_file = os.path.join(self.index_path, "metadata.json")
+        index_file = self.index_path / "products.index"
+        metadata_file = self.index_path / "metadata.json"
         
-        if os.path.exists(index_file) and os.path.exists(metadata_file):
+        if index_file.exists() and metadata_file.exists():
             try:
                 # Load FAISS index
-                self.index = faiss.read_index(index_file)
+                self.index = faiss.read_index(str(index_file))
                 
                 # Load metadata
                 with open(metadata_file, 'r') as f:
@@ -105,7 +112,7 @@ class FAISSIndex:
         query_embedding: np.ndarray, 
         top_k: int = 10,
         filter_categories: Optional[List[str]] = None,
-        min_score: float = 0.0
+        min_score: float = -1.0
     ) -> Tuple[List[Dict[str, Any]], np.ndarray]:
         """
         Search for similar products with enhanced filtering
@@ -209,6 +216,18 @@ class FAISSIndex:
         
         return initial_results[:top_k], initial_scores[:top_k]
     
+    def get_total_products(self) -> int:
+        """
+        Get total number of products in the index
+        """
+        return len(self.product_metadata)
+    
+    def get_statistics(self) -> Dict[str, Any]:
+        """
+        Get index statistics (alias for get_stats)
+        """
+        return self.get_stats()
+    
     def get_stats(self) -> Dict[str, Any]:
         """
         Get index statistics
@@ -225,11 +244,11 @@ class FAISSIndex:
         Save index and metadata to disk
         """
         try:
-            index_file = os.path.join(self.index_path, "products.index")
-            metadata_file = os.path.join(self.index_path, "metadata.json")
+            index_file = self.index_path / "products.index"
+            metadata_file = self.index_path / "metadata.json"
             
             # Save FAISS index
-            faiss.write_index(self.index, index_file)
+            faiss.write_index(self.index, str(index_file))
             
             # Save metadata
             with open(metadata_file, 'w') as f:

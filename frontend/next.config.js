@@ -1,9 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'standalone',
   images: {
-    domains: ['localhost', 'example.com'],
     remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '8000',
+        pathname: '/images/**',
+      },
       {
         protocol: 'https',
         hostname: '**',
@@ -15,6 +21,10 @@ const nextConfig = {
       {
         source: '/api/:path*',
         destination: 'http://localhost:8000/api/:path*',
+      },
+      {
+        source: '/images/:path*',
+        destination: 'http://localhost:8000/images/:path*',
       },
     ];
   },

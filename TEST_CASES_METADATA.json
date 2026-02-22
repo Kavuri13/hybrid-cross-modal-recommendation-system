@@ -1,0 +1,536 @@
+{
+  "metadata": {
+    "title": "Cross-Modal Recommendation System - Hybrid Test Cases",
+    "description": "20 test cases covering diverse scenarios for evaluating multimodal fusion",
+    "total_test_cases": 20,
+    "total_images_intended": 120,
+    "total_images_downloaded": 118,
+    "success_rate": 0.9833,
+    "created_date": "2026-02-22",
+    "image_directory": {
+      "inputs": "data/inputs/",
+      "outputs": "data/outputs/"
+    }
+  },
+  "test_cases": {
+    "TC-H01": {
+      "id": "TC-H01",
+      "description": "red_sleeveless_dress",
+      "text_query": "red floral party dress",
+      "alpha": 0.6,
+      "evaluation_objective": "Pattern enhancement + color retention",
+      "input_images": {
+        "count": 3,
+        "status": "2/3 downloaded",
+        "files": [
+          "TC-H01_input_red_sleeveless_dress_1.jpg",
+          "TC-H01_input_red_sleeveless_dress_2.jpg",
+          "TC-H01_input_red_sleeveless_dress_3.jpg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H01_output_red_sleeveless_dress_1.jpg",
+          "TC-H01_output_red_sleeveless_dress_2.jpg",
+          "TC-H01_output_red_sleeveless_dress_3.png"
+        ]
+      }
+    },
+    "TC-H02": {
+      "id": "TC-H02",
+      "description": "blue_denim_jacket",
+      "text_query": "formal office blazer",
+      "alpha": 0.7,
+      "evaluation_objective": "Text-dominant semantic override",
+      "input_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H02_input_blue_denim_jacket_1.jpg",
+          "TC-H02_input_blue_denim_jacket_2.jpg",
+          "TC-H02_input_blue_denim_jacket_3.jpg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H02_output_blue_denim_jacket_1.jpg",
+          "TC-H02_output_blue_denim_jacket_2.jpg",
+          "TC-H02_output_blue_denim_jacket_3.png"
+        ]
+      }
+    },
+    "TC-H03": {
+      "id": "TC-H03",
+      "description": "black_plain_tshirt",
+      "text_query": "black graphic streetwear t shirt",
+      "alpha": 0.65,
+      "evaluation_objective": "Pattern injection via text",
+      "input_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H03_input_black_plain_tshirt_1.jpg",
+          "TC-H03_input_black_plain_tshirt_2.jpg",
+          "TC-H03_input_black_plain_tshirt_3.jpg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H03_output_black_plain_tshirt_1.jpg",
+          "TC-H03_output_black_plain_tshirt_2.png",
+          "TC-H03_output_black_plain_tshirt_3.jpg"
+        ]
+      }
+    },
+    "TC-H04": {
+      "id": "TC-H04",
+      "description": "green_silk_saree",
+      "text_query": "traditional wedding outfit",
+      "alpha": 0.3,
+      "evaluation_objective": "Image-dominant fusion validation",
+      "input_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H04_input_green_silk_saree_1.jpg",
+          "TC-H04_input_green_silk_saree_2.jpeg",
+          "TC-H04_input_green_silk_saree_3.jpg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H04_output_green_silk_saree_1.jpg",
+          "TC-H04_output_green_silk_saree_2.jpg",
+          "TC-H04_output_green_silk_saree_3.jpg"
+        ]
+      }
+    },
+    "TC-H05": {
+      "id": "TC-H05",
+      "description": "white_sneakers",
+      "text_query": "black leather formal shoes",
+      "alpha": 0.5,
+      "evaluation_objective": "Conflict robustness",
+      "input_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H05_input_white_sneakers_1.jpg",
+          "TC-H05_input_white_sneakers_2.jpg",
+          "TC-H05_input_white_sneakers_3.jpg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H05_output_white_sneakers_1.jpg",
+          "TC-H05_output_white_sneakers_2.jpg",
+          "TC-H05_output_white_sneakers_3.jpg"
+        ]
+      }
+    },
+    "TC-H06": {
+      "id": "TC-H06",
+      "description": "grey_hoodie",
+      "text_query": "winter street fashion hoodie",
+      "alpha": 0.6,
+      "evaluation_objective": "Seasonal reinforcement",
+      "input_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H06_input_grey_hoodie_1.jpg",
+          "TC-H06_input_grey_hoodie_2.jpg",
+          "TC-H06_input_grey_hoodie_3.jpg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H06_output_grey_hoodie_1.jpg",
+          "TC-H06_output_grey_hoodie_2.jpg",
+          "TC-H06_output_grey_hoodie_3.jpg"
+        ]
+      }
+    },
+    "TC-H07": {
+      "id": "TC-H07",
+      "description": "yellow_kurti",
+      "text_query": "festive embroidered kurti",
+      "alpha": 0.6,
+      "evaluation_objective": "Ethnic semantic refinement",
+      "input_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H07_input_yellow_kurti_1.jpg",
+          "TC-H07_input_yellow_kurti_2.jpg",
+          "TC-H07_input_yellow_kurti_3.jpg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H07_output_yellow_kurti_1.jpg",
+          "TC-H07_output_yellow_kurti_2.jpg",
+          "TC-H07_output_yellow_kurti_3.jpg"
+        ]
+      }
+    },
+    "TC-H08": {
+      "id": "TC-H08",
+      "description": "black_blazer",
+      "text_query": "smart casual evening outfit",
+      "alpha": 0.55,
+      "evaluation_objective": "Context blending",
+      "input_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H08_input_black_blazer_1.jpg",
+          "TC-H08_input_black_blazer_2.jpg",
+          "TC-H08_input_black_blazer_3.jpg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H08_output_black_blazer_1.jpg",
+          "TC-H08_output_black_blazer_2.jpg",
+          "TC-H08_output_black_blazer_3.webp"
+        ]
+      }
+    },
+    "TC-H09": {
+      "id": "TC-H09",
+      "description": "white_shirt",
+      "text_query": "lightweight summer shirt",
+      "alpha": 0.6,
+      "evaluation_objective": "Fabric-based semantic shift",
+      "input_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H09_input_white_shirt_1.jpg",
+          "TC-H09_input_white_shirt_2.jpg",
+          "TC-H09_input_white_shirt_3.jpg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H09_output_white_shirt_1.jpg",
+          "TC-H09_output_white_shirt_2.jpg",
+          "TC-H09_output_white_shirt_3.jpg"
+        ]
+      }
+    },
+    "TC-H10": {
+      "id": "TC-H10",
+      "description": "pink_midi_dress",
+      "text_query": "elegant wedding guest outfit",
+      "alpha": 0.6,
+      "evaluation_objective": "Occasion-aware refinement",
+      "input_images": {
+        "count": 3,
+        "status": "2/3 downloaded",
+        "notes": "Third image failed after 3 retry attempts (timeout)",
+        "files": [
+          "TC-H10_input_pink_midi_dress_1.jpg",
+          "TC-H10_input_pink_midi_dress_2.jpg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H10_output_pink_midi_dress_1.jpg",
+          "TC-H10_output_pink_midi_dress_2.jpg",
+          "TC-H10_output_pink_midi_dress_3.jpg"
+        ]
+      }
+    },
+    "TC-H11": {
+      "id": "TC-H11",
+      "description": "brown_boots",
+      "text_query": "hiking outdoor footwear",
+      "alpha": 0.65,
+      "evaluation_objective": "Functional category emphasis",
+      "input_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H11_input_brown_boots_1.jpg",
+          "TC-H11_input_brown_boots_2.jpg",
+          "TC-H11_input_brown_boots_3.jpg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H11_output_brown_boots_1.jpg",
+          "TC-H11_output_brown_boots_2.jpg",
+          "TC-H11_output_brown_boots_3.jpg"
+        ]
+      }
+    },
+    "TC-H12": {
+      "id": "TC-H12",
+      "description": "blue_jeans",
+      "text_query": "ripped distressed street style jeans",
+      "alpha": 0.7,
+      "evaluation_objective": "Style modification",
+      "input_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H12_input_blue_jeans_1.jpg",
+          "TC-H12_input_blue_jeans_2.jpg",
+          "TC-H12_input_blue_jeans_3.jpg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H12_output_blue_jeans_1.jpg",
+          "TC-H12_output_blue_jeans_2.jpg",
+          "TC-H12_output_blue_jeans_3.jpg"
+        ]
+      }
+    },
+    "TC-H13": {
+      "id": "TC-H13",
+      "description": "black_saree",
+      "text_query": "reception party wear saree",
+      "alpha": 0.5,
+      "evaluation_objective": "Contextual enhancement",
+      "input_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H13_input_black_saree_1.jpg",
+          "TC-H13_input_black_saree_2.jpg",
+          "TC-H13_input_black_saree_3.jpg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H13_output_black_saree_1.jpg",
+          "TC-H13_output_black_saree_2.jpg",
+          "TC-H13_output_black_saree_3.jpg"
+        ]
+      }
+    },
+    "TC-H14": {
+      "id": "TC-H14",
+      "description": "green_tshirt",
+      "text_query": "gym fitness performance t shirt",
+      "alpha": 0.6,
+      "evaluation_objective": "Activity-aware ranking",
+      "input_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H14_input_green_tshirt_1.jpg",
+          "TC-H14_input_green_tshirt_2.jpg",
+          "TC-H14_input_green_tshirt_3.jpg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H14_output_green_tshirt_1.jpg",
+          "TC-H14_output_green_tshirt_2.jpg",
+          "TC-H14_output_green_tshirt_3.jpg"
+        ]
+      }
+    },
+    "TC-H15": {
+      "id": "TC-H15",
+      "description": "white_heels",
+      "text_query": "bridal wedding heels elegant",
+      "alpha": 0.6,
+      "evaluation_objective": "Occasion specificity",
+      "input_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H15_input_white_heels_1.jpg",
+          "TC-H15_input_white_heels_2.jpg",
+          "TC-H15_input_white_heels_3.jpeg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H15_output_white_heels_1.jpg",
+          "TC-H15_output_white_heels_2.jpg",
+          "TC-H15_output_white_heels_3.jpg"
+        ]
+      }
+    },
+    "TC-H16": {
+      "id": "TC-H16",
+      "description": "leather_jacket",
+      "text_query": "biker street fashion jacket",
+      "alpha": 0.7,
+      "evaluation_objective": "Strong text-guided refinement",
+      "input_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H16_input_leather_jacket_1.jpg",
+          "TC-H16_input_leather_jacket_2.jpg",
+          "TC-H16_input_leather_jacket_3.jpg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H16_output_leather_jacket_1.jpg",
+          "TC-H16_output_leather_jacket_2.jpg",
+          "TC-H16_output_leather_jacket_3.jpg"
+        ]
+      }
+    },
+    "TC-H17": {
+      "id": "TC-H17",
+      "description": "floral_skirt",
+      "text_query": "summer beach vacation outfit",
+      "alpha": 0.6,
+      "evaluation_objective": "Seasonal adaptation",
+      "input_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H17_input_floral_skirt_1.jpg",
+          "TC-H17_input_floral_skirt_2.jpg",
+          "TC-H17_input_floral_skirt_3.png"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H17_output_floral_skirt_1.jpg",
+          "TC-H17_output_floral_skirt_2.webp",
+          "TC-H17_output_floral_skirt_3.jpg"
+        ]
+      }
+    },
+    "TC-H18": {
+      "id": "TC-H18",
+      "description": "navy_suit",
+      "text_query": "formal job interview suit",
+      "alpha": 0.65,
+      "evaluation_objective": "Professional context emphasis",
+      "input_images": {
+        "count": 3,
+        "status": "2/3 downloaded",
+        "notes": "TC-H18 had only 2 input images in the specification",
+        "files": [
+          "TC-H18_input_navy_suit_1.jpg",
+          "TC-H18_input_navy_suit_2.jpg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H18_output_navy_suit_1.png",
+          "TC-H18_output_navy_suit_2.jpg",
+          "TC-H18_output_navy_suit_3.jpg"
+        ]
+      }
+    },
+    "TC-H19": {
+      "id": "TC-H19",
+      "description": "red_hoodie",
+      "text_query": "sports activewear hoodie",
+      "alpha": 0.6,
+      "evaluation_objective": "Activity classification",
+      "input_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H19_input_red_hoodie_1.jpg",
+          "TC-H19_input_red_hoodie_2.jpg",
+          "TC-H19_input_red_hoodie_3.jpg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H19_output_red_hoodie_1.jpg",
+          "TC-H19_output_red_hoodie_2.jpg",
+          "TC-H19_output_red_hoodie_3.jpg"
+        ]
+      }
+    },
+    "TC-H20": {
+      "id": "TC-H20",
+      "description": "beige_coat",
+      "text_query": "luxury winter overcoat premium",
+      "alpha": 0.6,
+      "evaluation_objective": "Quality & material refinement",
+      "input_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H20_input_beige_coat_1.jpg",
+          "TC-H20_input_beige_coat_2.jpg",
+          "TC-H20_input_beige_coat_3.jpg"
+        ]
+      },
+      "output_images": {
+        "count": 3,
+        "status": "3/3 downloaded",
+        "files": [
+          "TC-H20_output_beige_coat_1.jpg",
+          "TC-H20_output_beige_coat_2.jpeg",
+          "TC-H20_output_beige_coat_3.png"
+        ]
+      }
+    }
+  },
+  "statistics": {
+    "total_test_cases": 20,
+    "fully_downloaded": 18,
+    "partially_downloaded": 2,
+    "total_input_images": {
+      "intended": 60,
+      "downloaded": 58
+    },
+    "total_output_images": {
+      "intended": 60,
+      "downloaded": 60
+    },
+    "image_formats": {
+      "jpg": 106,
+      "jpeg": 4,
+      "png": 6,
+      "webp": 2
+    }
+  }
+}

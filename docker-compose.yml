@@ -1,0 +1,31 @@
+version: '3.8'
+
+name: cross-modal-recommendation
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: /api/v1
+    ports:
+      - "80:80"
+    volumes:
+      - ./data:/app/data:ro
+      - ./index:/app/index:ro
+    environment:
+      - ENVIRONMENT=production
+      - LOG_LEVEL=info
+      - NODE_ENV=production
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/api/v1/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+networks:
+  default:
+    name: cross-modal-recommendation-network

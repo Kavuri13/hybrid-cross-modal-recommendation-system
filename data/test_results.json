@@ -1,0 +1,3842 @@
+{
+  "timestamp": "2026-02-23T00:55:07.008999",
+  "total_tests": 20,
+  "successful": 20,
+  "failed": 0,
+  "test_cases": [
+    {
+      "id": "TC-H01",
+      "description": "red_sleeveless_dress",
+      "text_query": "red floral party dress",
+      "alpha": 0.6,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H01_input_red_sleeveless_dress_1.jpg",
+          "search_results": {
+            "query_time": 0.2241051197052002,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "2",
+              "3",
+              "1",
+              "49",
+              "51",
+              "30",
+              "26",
+              "46",
+              "19",
+              "50"
+            ],
+            "image_urls": [
+              "/images/product_2.jpg",
+              "/images/product_3.jpg",
+              "/images/product_1.jpg",
+              "/images/product_49.jpg",
+              "/images/product_51.jpg",
+              "/images/product_30.jpg",
+              "/images/product_26.jpg",
+              "/images/product_46.jpg",
+              "/images/product_19.jpg",
+              "/images/product_50.jpg"
+            ],
+            "titles": [
+              "Red Floral Print Party Dress",
+              "Red Velvet Wedding Dress",
+              "Red Sleeveless Party Dress",
+              "Colorful Casual Skirt",
+              "Premium Floral Vacation Skirt",
+              "Pink Elegant Cocktail Dress",
+              "White Lightweight Summer Shirt",
+              "Brown Leather Jacket",
+              "Yellow Casual Kurti",
+              "Floral Light Skirt Beach Wear"
+            ],
+            "scores": [
+              0.299910306930542,
+              0.41190946102142334,
+              0.5128316283226013,
+              0.6467514038085938,
+              0.6579307317733765,
+              0.6978921890258789,
+              0.7023905515670776,
+              0.7118932008743286,
+              0.7221640348434448,
+              0.7340410947799683
+            ]
+          },
+          "top_3_products": [
+            "/images/product_2.jpg",
+            "/images/product_3.jpg",
+            "/images/product_1.jpg"
+          ],
+          "query_time": 0.2241051197052002
+        },
+        {
+          "input_image": "TC-H01_input_red_sleeveless_dress_2.jpg",
+          "search_results": {
+            "query_time": 0.21105337142944336,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "2",
+              "1",
+              "3",
+              "30",
+              "51",
+              "49",
+              "26",
+              "40",
+              "25",
+              "2"
+            ],
+            "image_urls": [
+              "/images/product_2.jpg",
+              "/images/product_1.jpg",
+              "/images/product_3.jpg",
+              "/images/product_30.jpg",
+              "/images/product_51.jpg",
+              "/images/product_49.jpg",
+              "/images/product_26.jpg",
+              "/images/product_40.jpg",
+              "/images/product_25.jpg",
+              "/images/product_2.jpg"
+            ],
+            "titles": [
+              "Red Floral Print Party Dress",
+              "Red Sleeveless Party Dress",
+              "Red Velvet Wedding Dress",
+              "Pink Elegant Cocktail Dress",
+              "Premium Floral Vacation Skirt",
+              "Colorful Casual Skirt",
+              "White Lightweight Summer Shirt",
+              "Green Casual T-Shirt",
+              "White Casual Shirt",
+              "Red Floral Print Party Dress"
+            ],
+            "scores": [
+              0.3749132454395294,
+              0.529876172542572,
+              0.5368349552154541,
+              0.6303881406784058,
+              0.6657227873802185,
+              0.669052243232727,
+              0.7263860106468201,
+              0.7542750835418701,
+              0.76383376121521,
+              0.7768810987472534
+            ]
+          },
+          "top_3_products": [
+            "/images/product_2.jpg",
+            "/images/product_1.jpg",
+            "/images/product_3.jpg"
+          ],
+          "query_time": 0.21105337142944336
+        },
+        {
+          "input_image": "TC-H01_input_red_sleeveless_dress_3.jpg",
+          "search_results": {
+            "query_time": 0.25284457206726074,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "2",
+              "3",
+              "1",
+              "51",
+              "30",
+              "49",
+              "26",
+              "40",
+              "25",
+              "41"
+            ],
+            "image_urls": [
+              "/images/product_2.jpg",
+              "/images/product_3.jpg",
+              "/images/product_1.jpg",
+              "/images/product_51.jpg",
+              "/images/product_30.jpg",
+              "/images/product_49.jpg",
+              "/images/product_26.jpg",
+              "/images/product_40.jpg",
+              "/images/product_25.jpg",
+              "/images/product_41.jpg"
+            ],
+            "titles": [
+              "Red Floral Print Party Dress",
+              "Red Velvet Wedding Dress",
+              "Red Sleeveless Party Dress",
+              "Premium Floral Vacation Skirt",
+              "Pink Elegant Cocktail Dress",
+              "Colorful Casual Skirt",
+              "White Lightweight Summer Shirt",
+              "Green Casual T-Shirt",
+              "White Casual Shirt",
+              "Green Athletic Performance T-Shirt"
+            ],
+            "scores": [
+              0.3994309902191162,
+              0.5306611061096191,
+              0.5488682389259338,
+              0.6676246523857117,
+              0.6702735424041748,
+              0.6794607639312744,
+              0.7157688140869141,
+              0.7388526201248169,
+              0.764521062374115,
+              0.7742783427238464
+            ]
+          },
+          "top_3_products": [
+            "/images/product_2.jpg",
+            "/images/product_3.jpg",
+            "/images/product_1.jpg"
+          ],
+          "query_time": 0.25284457206726074
+        }
+      ]
+    },
+    {
+      "id": "TC-H02",
+      "description": "blue_denim_jacket",
+      "text_query": "formal office blazer",
+      "alpha": 0.7,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H02_input_blue_denim_jacket_1.jpg",
+          "search_results": {
+            "query_time": 0.2579054832458496,
+            "search_type": "hybrid",
+            "alpha_used": 0.7,
+            "total_results": 10,
+            "product_ids": [
+              "23",
+              "52",
+              "48",
+              "4",
+              "22",
+              "36",
+              "6",
+              "47",
+              "5",
+              "35"
+            ],
+            "image_urls": [
+              "/images/product_23.jpg",
+              "/images/product_52.jpg",
+              "/images/product_48.jpg",
+              "/images/product_4.jpg",
+              "/images/product_22.jpg",
+              "/images/product_36.jpg",
+              "/images/product_6.jpg",
+              "/images/product_47.jpg",
+              "/images/product_5.jpg",
+              "/images/product_35.jpg"
+            ],
+            "titles": [
+              "Black Smart Casual Blazer",
+              "Navy Formal Blazer",
+              "Black Premium Biker Leather Jacket",
+              "Blue Denim Jacket",
+              "Black Casual Blazer",
+              "Blue Premium Ripped Street Jeans",
+              "Navy Formal Office Blazer",
+              "Black Biker Leather Jacket",
+              "Blue Formal Blazer",
+              "Blue Ripped Distressed Jeans"
+            ],
+            "scores": [
+              0.4799961447715759,
+              0.5101555585861206,
+              0.5531604290008545,
+              0.554015040397644,
+              0.5601406693458557,
+              0.5848261117935181,
+              0.5920746326446533,
+              0.5981772541999817,
+              0.602422833442688,
+              0.6244288086891174
+            ]
+          },
+          "top_3_products": [
+            "/images/product_23.jpg",
+            "/images/product_52.jpg",
+            "/images/product_48.jpg"
+          ],
+          "query_time": 0.2579054832458496
+        },
+        {
+          "input_image": "TC-H02_input_blue_denim_jacket_2.jpg",
+          "search_results": {
+            "query_time": 0.2743406295776367,
+            "search_type": "hybrid",
+            "alpha_used": 0.7,
+            "total_results": 10,
+            "product_ids": [
+              "23",
+              "52",
+              "48",
+              "22",
+              "6",
+              "4",
+              "36",
+              "47",
+              "46",
+              "5"
+            ],
+            "image_urls": [
+              "/images/product_23.jpg",
+              "/images/product_52.jpg",
+              "/images/product_48.jpg",
+              "/images/product_22.jpg",
+              "/images/product_6.jpg",
+              "/images/product_4.jpg",
+              "/images/product_36.jpg",
+              "/images/product_47.jpg",
+              "/images/product_46.jpg",
+              "/images/product_5.jpg"
+            ],
+            "titles": [
+              "Black Smart Casual Blazer",
+              "Navy Formal Blazer",
+              "Black Premium Biker Leather Jacket",
+              "Black Casual Blazer",
+              "Navy Formal Office Blazer",
+              "Blue Denim Jacket",
+              "Blue Premium Ripped Street Jeans",
+              "Black Biker Leather Jacket",
+              "Brown Leather Jacket",
+              "Blue Formal Blazer"
+            ],
+            "scores": [
+              0.4657004475593567,
+              0.503170371055603,
+              0.5349065065383911,
+              0.5354669690132141,
+              0.5730553269386292,
+              0.5772635340690613,
+              0.581204891204834,
+              0.6001269817352295,
+              0.6035104393959045,
+              0.6056908965110779
+            ]
+          },
+          "top_3_products": [
+            "/images/product_23.jpg",
+            "/images/product_52.jpg",
+            "/images/product_48.jpg"
+          ],
+          "query_time": 0.2743406295776367
+        },
+        {
+          "input_image": "TC-H02_input_blue_denim_jacket_3.jpg",
+          "search_results": {
+            "query_time": 0.21808862686157227,
+            "search_type": "hybrid",
+            "alpha_used": 0.7,
+            "total_results": 10,
+            "product_ids": [
+              "23",
+              "52",
+              "22",
+              "6",
+              "36",
+              "48",
+              "4",
+              "26",
+              "5",
+              "46"
+            ],
+            "image_urls": [
+              "/images/product_23.jpg",
+              "/images/product_52.jpg",
+              "/images/product_22.jpg",
+              "/images/product_6.jpg",
+              "/images/product_36.jpg",
+              "/images/product_48.jpg",
+              "/images/product_4.jpg",
+              "/images/product_26.jpg",
+              "/images/product_5.jpg",
+              "/images/product_46.jpg"
+            ],
+            "titles": [
+              "Black Smart Casual Blazer",
+              "Navy Formal Blazer",
+              "Black Casual Blazer",
+              "Navy Formal Office Blazer",
+              "Blue Premium Ripped Street Jeans",
+              "Black Premium Biker Leather Jacket",
+              "Blue Denim Jacket",
+              "White Lightweight Summer Shirt",
+              "Blue Formal Blazer",
+              "Brown Leather Jacket"
+            ],
+            "scores": [
+              0.4402557611465454,
+              0.538651704788208,
+              0.5409703254699707,
+              0.5642358064651489,
+              0.5655137300491333,
+              0.5836501717567444,
+              0.5940081477165222,
+              0.6062694191932678,
+              0.6131956577301025,
+              0.6161371469497681
+            ]
+          },
+          "top_3_products": [
+            "/images/product_23.jpg",
+            "/images/product_52.jpg",
+            "/images/product_22.jpg"
+          ],
+          "query_time": 0.21808862686157227
+        }
+      ]
+    },
+    {
+      "id": "TC-H03",
+      "description": "black_plain_tshirt",
+      "text_query": "black graphic streetwear t shirt",
+      "alpha": 0.65,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H03_input_black_plain_tshirt_1.jpg",
+          "search_results": {
+            "query_time": 0.2290806770324707,
+            "search_type": "hybrid",
+            "alpha_used": 0.65,
+            "total_results": 10,
+            "product_ids": [
+              "37",
+              "23",
+              "36",
+              "49",
+              "9",
+              "42",
+              "22",
+              "7",
+              "48",
+              "15"
+            ],
+            "image_urls": [
+              "/images/product_37.jpg",
+              "/images/product_23.jpg",
+              "/images/product_36.jpg",
+              "/images/product_49.jpg",
+              "/images/product_9.jpg",
+              "/images/product_42.jpg",
+              "/images/product_22.jpg",
+              "/images/product_7.jpg",
+              "/images/product_48.jpg",
+              "/images/product_15.jpg"
+            ],
+            "titles": [
+              "Black Traditional Saree",
+              "Black Smart Casual Blazer",
+              "Blue Premium Ripped Street Jeans",
+              "Colorful Casual Skirt",
+              "Black Printed Streetwear Tee",
+              "Green Premium Fitness Tee",
+              "Black Casual Blazer",
+              "Black Plain T-Shirt",
+              "Black Premium Biker Leather Jacket",
+              "Black Premium Leather Shoes"
+            ],
+            "scores": [
+              0.4072065055370331,
+              0.49243980646133423,
+              0.5113633871078491,
+              0.5249935388565063,
+              0.5456926822662354,
+              0.5486535429954529,
+              0.5620989799499512,
+              0.5638868808746338,
+              0.5926116704940796,
+              0.6075671315193176
+            ]
+          },
+          "top_3_products": [
+            "/images/product_37.jpg",
+            "/images/product_23.jpg",
+            "/images/product_36.jpg"
+          ],
+          "query_time": 0.2290806770324707
+        },
+        {
+          "input_image": "TC-H03_input_black_plain_tshirt_2.jpg",
+          "search_results": {
+            "query_time": 0.2252025604248047,
+            "search_type": "hybrid",
+            "alpha_used": 0.65,
+            "total_results": 10,
+            "product_ids": [
+              "37",
+              "23",
+              "9",
+              "36",
+              "7",
+              "22",
+              "42",
+              "49",
+              "15",
+              "8"
+            ],
+            "image_urls": [
+              "/images/product_37.jpg",
+              "/images/product_23.jpg",
+              "/images/product_9.jpg",
+              "/images/product_36.jpg",
+              "/images/product_7.jpg",
+              "/images/product_22.jpg",
+              "/images/product_42.jpg",
+              "/images/product_49.jpg",
+              "/images/product_15.jpg",
+              "/images/product_8.jpg"
+            ],
+            "titles": [
+              "Black Traditional Saree",
+              "Black Smart Casual Blazer",
+              "Black Printed Streetwear Tee",
+              "Blue Premium Ripped Street Jeans",
+              "Black Plain T-Shirt",
+              "Black Casual Blazer",
+              "Green Premium Fitness Tee",
+              "Colorful Casual Skirt",
+              "Black Premium Leather Shoes",
+              "Black Graphic Streetwear T-Shirt"
+            ],
+            "scores": [
+              0.43046334385871887,
+              0.5037474632263184,
+              0.5285304188728333,
+              0.5485117435455322,
+              0.5502095222473145,
+              0.56748366355896,
+              0.5821840763092041,
+              0.5864136219024658,
+              0.5983158946037292,
+              0.6101419925689697
+            ]
+          },
+          "top_3_products": [
+            "/images/product_37.jpg",
+            "/images/product_23.jpg",
+            "/images/product_9.jpg"
+          ],
+          "query_time": 0.2252025604248047
+        },
+        {
+          "input_image": "TC-H03_input_black_plain_tshirt_3.jpg",
+          "search_results": {
+            "query_time": 0.21241402626037598,
+            "search_type": "hybrid",
+            "alpha_used": 0.65,
+            "total_results": 10,
+            "product_ids": [
+              "37",
+              "23",
+              "36",
+              "9",
+              "7",
+              "22",
+              "49",
+              "42",
+              "48",
+              "15"
+            ],
+            "image_urls": [
+              "/images/product_37.jpg",
+              "/images/product_23.jpg",
+              "/images/product_36.jpg",
+              "/images/product_9.jpg",
+              "/images/product_7.jpg",
+              "/images/product_22.jpg",
+              "/images/product_49.jpg",
+              "/images/product_42.jpg",
+              "/images/product_48.jpg",
+              "/images/product_15.jpg"
+            ],
+            "titles": [
+              "Black Traditional Saree",
+              "Black Smart Casual Blazer",
+              "Blue Premium Ripped Street Jeans",
+              "Black Printed Streetwear Tee",
+              "Black Plain T-Shirt",
+              "Black Casual Blazer",
+              "Colorful Casual Skirt",
+              "Green Premium Fitness Tee",
+              "Black Premium Biker Leather Jacket",
+              "Black Premium Leather Shoes"
+            ],
+            "scores": [
+              0.4214860200881958,
+              0.481998085975647,
+              0.5170700550079346,
+              0.5205882787704468,
+              0.5339372754096985,
+              0.538547158241272,
+              0.5407100915908813,
+              0.5642518401145935,
+              0.5948966145515442,
+              0.6146255135536194
+            ]
+          },
+          "top_3_products": [
+            "/images/product_37.jpg",
+            "/images/product_23.jpg",
+            "/images/product_36.jpg"
+          ],
+          "query_time": 0.21241402626037598
+        }
+      ]
+    },
+    {
+      "id": "TC-H04",
+      "description": "green_silk_saree",
+      "text_query": "traditional wedding outfit",
+      "alpha": 0.3,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H04_input_green_silk_saree_1.jpg",
+          "search_results": {
+            "query_time": 0.3168466091156006,
+            "search_type": "hybrid",
+            "alpha_used": 0.3,
+            "total_results": 10,
+            "product_ids": [
+              "34",
+              "9",
+              "7",
+              "25",
+              "54",
+              "35",
+              "33",
+              "40",
+              "8",
+              "53"
+            ],
+            "image_urls": [
+              "/images/product_34.jpg",
+              "/images/product_9.jpg",
+              "/images/product_7.jpg",
+              "/images/product_25.jpg",
+              "/images/product_54.jpg",
+              "/images/product_35.jpg",
+              "/images/product_33.jpg",
+              "/images/product_40.jpg",
+              "/images/product_8.jpg",
+              "/images/product_53.jpg"
+            ],
+            "titles": [
+              "Blue Casual Jeans",
+              "Black Printed Streetwear Tee",
+              "Black Plain T-Shirt",
+              "White Casual Shirt",
+              "Navy Structured Business Suit",
+              "Blue Ripped Distressed Jeans",
+              "Brown Premium Hiking Boots",
+              "Green Casual T-Shirt",
+              "Black Graphic Streetwear T-Shirt",
+              "Navy Interview Business Suit"
+            ],
+            "scores": [
+              0.6956108808517456,
+              0.7090260982513428,
+              0.723723292350769,
+              0.7451562881469727,
+              0.7717076539993286,
+              0.8082721829414368,
+              0.8092032670974731,
+              0.8224644660949707,
+              0.8338384628295898,
+              0.8403269052505493
+            ]
+          },
+          "top_3_products": [
+            "/images/product_34.jpg",
+            "/images/product_9.jpg",
+            "/images/product_7.jpg"
+          ],
+          "query_time": 0.3168466091156006
+        },
+        {
+          "input_image": "TC-H04_input_green_silk_saree_2.jpeg",
+          "search_results": {
+            "query_time": 0.1843705177307129,
+            "search_type": "hybrid",
+            "alpha_used": 0.3,
+            "total_results": 10,
+            "product_ids": [
+              "9",
+              "7",
+              "34",
+              "25",
+              "35",
+              "54",
+              "26",
+              "33",
+              "46",
+              "40"
+            ],
+            "image_urls": [
+              "/images/product_9.jpg",
+              "/images/product_7.jpg",
+              "/images/product_34.jpg",
+              "/images/product_25.jpg",
+              "/images/product_35.jpg",
+              "/images/product_54.jpg",
+              "/images/product_26.jpg",
+              "/images/product_33.jpg",
+              "/images/product_46.jpg",
+              "/images/product_40.jpg"
+            ],
+            "titles": [
+              "Black Printed Streetwear Tee",
+              "Black Plain T-Shirt",
+              "Blue Casual Jeans",
+              "White Casual Shirt",
+              "Blue Ripped Distressed Jeans",
+              "Navy Structured Business Suit",
+              "White Lightweight Summer Shirt",
+              "Brown Premium Hiking Boots",
+              "Brown Leather Jacket",
+              "Green Casual T-Shirt"
+            ],
+            "scores": [
+              0.6462279558181763,
+              0.6693040728569031,
+              0.6799097657203674,
+              0.7083333134651184,
+              0.7342389822006226,
+              0.7701146602630615,
+              0.7737237215042114,
+              0.7756391763687134,
+              0.7795529365539551,
+              0.794295072555542
+            ]
+          },
+          "top_3_products": [
+            "/images/product_9.jpg",
+            "/images/product_7.jpg",
+            "/images/product_34.jpg"
+          ],
+          "query_time": 0.1843705177307129
+        },
+        {
+          "input_image": "TC-H04_input_green_silk_saree_3.jpg",
+          "search_results": {
+            "query_time": 0.2719738483428955,
+            "search_type": "hybrid",
+            "alpha_used": 0.3,
+            "total_results": 10,
+            "product_ids": [
+              "34",
+              "9",
+              "7",
+              "25",
+              "35",
+              "54",
+              "33",
+              "40",
+              "26",
+              "46"
+            ],
+            "image_urls": [
+              "/images/product_34.jpg",
+              "/images/product_9.jpg",
+              "/images/product_7.jpg",
+              "/images/product_25.jpg",
+              "/images/product_35.jpg",
+              "/images/product_54.jpg",
+              "/images/product_33.jpg",
+              "/images/product_40.jpg",
+              "/images/product_26.jpg",
+              "/images/product_46.jpg"
+            ],
+            "titles": [
+              "Blue Casual Jeans",
+              "Black Printed Streetwear Tee",
+              "Black Plain T-Shirt",
+              "White Casual Shirt",
+              "Blue Ripped Distressed Jeans",
+              "Navy Structured Business Suit",
+              "Brown Premium Hiking Boots",
+              "Green Casual T-Shirt",
+              "White Lightweight Summer Shirt",
+              "Brown Leather Jacket"
+            ],
+            "scores": [
+              0.6663919687271118,
+              0.673822820186615,
+              0.6856566667556763,
+              0.689599871635437,
+              0.732056736946106,
+              0.7597081661224365,
+              0.7678789496421814,
+              0.7731773853302002,
+              0.778127908706665,
+              0.7798017263412476
+            ]
+          },
+          "top_3_products": [
+            "/images/product_34.jpg",
+            "/images/product_9.jpg",
+            "/images/product_7.jpg"
+          ],
+          "query_time": 0.2719738483428955
+        }
+      ]
+    },
+    {
+      "id": "TC-H05",
+      "description": "white_sneakers",
+      "text_query": "black leather formal shoes",
+      "alpha": 0.5,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H05_input_white_sneakers_1.jpg",
+          "search_results": {
+            "query_time": 0.36210179328918457,
+            "search_type": "hybrid",
+            "alpha_used": 0.5,
+            "total_results": 10,
+            "product_ids": [
+              "14",
+              "15",
+              "14",
+              "15",
+              "44",
+              "32",
+              "48",
+              "23",
+              "45",
+              "43"
+            ],
+            "image_urls": [
+              "/images/product_14.jpg",
+              "/images/product_15.jpg",
+              "/images/product_14.jpg",
+              "/images/product_15.jpg",
+              "/images/product_44.jpg",
+              "/images/product_32.jpg",
+              "/images/product_48.jpg",
+              "/images/product_23.jpg",
+              "/images/product_45.jpg",
+              "/images/product_43.jpg"
+            ],
+            "titles": [
+              "Black Leather Formal Shoes",
+              "Black Premium Leather Shoes",
+              "Black Leather Formal Shoes",
+              "Black Premium Leather Shoes",
+              "White Bridal Wedding Heels",
+              "Brown Trekking Boots",
+              "Black Premium Biker Leather Jacket",
+              "Black Smart Casual Blazer",
+              "White Luxury Bridal Heels",
+              "White Casual Heels"
+            ],
+            "scores": [
+              0.45090043544769287,
+              0.487945020198822,
+              0.529839038848877,
+              0.5637959241867065,
+              0.5691349506378174,
+              0.6143777966499329,
+              0.630394458770752,
+              0.637980580329895,
+              0.6393076777458191,
+              0.6423888206481934
+            ]
+          },
+          "top_3_products": [
+            "/images/product_14.jpg",
+            "/images/product_15.jpg",
+            "/images/product_14.jpg"
+          ],
+          "query_time": 0.36210179328918457
+        },
+        {
+          "input_image": "TC-H05_input_white_sneakers_2.jpg",
+          "search_results": {
+            "query_time": 0.19253849983215332,
+            "search_type": "hybrid",
+            "alpha_used": 0.5,
+            "total_results": 10,
+            "product_ids": [
+              "15",
+              "14",
+              "14",
+              "15",
+              "32",
+              "44",
+              "13",
+              "48",
+              "23",
+              "43"
+            ],
+            "image_urls": [
+              "/images/product_15.jpg",
+              "/images/product_14.jpg",
+              "/images/product_14.jpg",
+              "/images/product_15.jpg",
+              "/images/product_32.jpg",
+              "/images/product_44.jpg",
+              "/images/product_13.jpg",
+              "/images/product_48.jpg",
+              "/images/product_23.jpg",
+              "/images/product_43.jpg"
+            ],
+            "titles": [
+              "Black Premium Leather Shoes",
+              "Black Leather Formal Shoes",
+              "Black Leather Formal Shoes",
+              "Black Premium Leather Shoes",
+              "Brown Trekking Boots",
+              "White Bridal Wedding Heels",
+              "White Casual Sneakers",
+              "Black Premium Biker Leather Jacket",
+              "Black Smart Casual Blazer",
+              "White Casual Heels"
+            ],
+            "scores": [
+              0.5040727853775024,
+              0.5087635517120361,
+              0.5511088967323303,
+              0.5932037830352783,
+              0.5997049808502197,
+              0.6729931235313416,
+              0.6900762915611267,
+              0.6998777389526367,
+              0.7250618934631348,
+              0.7389369010925293
+            ]
+          },
+          "top_3_products": [
+            "/images/product_15.jpg",
+            "/images/product_14.jpg",
+            "/images/product_14.jpg"
+          ],
+          "query_time": 0.19253849983215332
+        },
+        {
+          "input_image": "TC-H05_input_white_sneakers_3.jpg",
+          "search_results": {
+            "query_time": 0.2008497714996338,
+            "search_type": "hybrid",
+            "alpha_used": 0.5,
+            "total_results": 10,
+            "product_ids": [
+              "14",
+              "15",
+              "14",
+              "15",
+              "32",
+              "44",
+              "43",
+              "48",
+              "23",
+              "13"
+            ],
+            "image_urls": [
+              "/images/product_14.jpg",
+              "/images/product_15.jpg",
+              "/images/product_14.jpg",
+              "/images/product_15.jpg",
+              "/images/product_32.jpg",
+              "/images/product_44.jpg",
+              "/images/product_43.jpg",
+              "/images/product_48.jpg",
+              "/images/product_23.jpg",
+              "/images/product_13.jpg"
+            ],
+            "titles": [
+              "Black Leather Formal Shoes",
+              "Black Premium Leather Shoes",
+              "Black Leather Formal Shoes",
+              "Black Premium Leather Shoes",
+              "Brown Trekking Boots",
+              "White Bridal Wedding Heels",
+              "White Casual Heels",
+              "Black Premium Biker Leather Jacket",
+              "Black Smart Casual Blazer",
+              "White Casual Sneakers"
+            ],
+            "scores": [
+              0.43262767791748047,
+              0.45034295320510864,
+              0.5484890937805176,
+              0.5736566781997681,
+              0.5791587829589844,
+              0.5889133214950562,
+              0.61517333984375,
+              0.6242139339447021,
+              0.6270389556884766,
+              0.6329723596572876
+            ]
+          },
+          "top_3_products": [
+            "/images/product_14.jpg",
+            "/images/product_15.jpg",
+            "/images/product_14.jpg"
+          ],
+          "query_time": 0.2008497714996338
+        }
+      ]
+    },
+    {
+      "id": "TC-H06",
+      "description": "grey_hoodie",
+      "text_query": "winter street fashion hoodie",
+      "alpha": 0.6,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H06_input_grey_hoodie_1.jpg",
+          "search_results": {
+            "query_time": 0.20212268829345703,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "13",
+              "36",
+              "18",
+              "23",
+              "32",
+              "48",
+              "47",
+              "52",
+              "15",
+              "51"
+            ],
+            "image_urls": [
+              "/images/product_13.jpg",
+              "/images/product_36.jpg",
+              "/images/product_18.jpg",
+              "/images/product_23.jpg",
+              "/images/product_32.jpg",
+              "/images/product_48.jpg",
+              "/images/product_47.jpg",
+              "/images/product_52.jpg",
+              "/images/product_15.jpg",
+              "/images/product_51.jpg"
+            ],
+            "titles": [
+              "White Casual Sneakers",
+              "Blue Premium Ripped Street Jeans",
+              "Grey Premium Winter Hoodie",
+              "Black Smart Casual Blazer",
+              "Brown Trekking Boots",
+              "Black Premium Biker Leather Jacket",
+              "Black Biker Leather Jacket",
+              "Navy Formal Blazer",
+              "Black Premium Leather Shoes",
+              "Premium Floral Vacation Skirt"
+            ],
+            "scores": [
+              0.5324952602386475,
+              0.5646271109580994,
+              0.5710393190383911,
+              0.578374445438385,
+              0.6272536516189575,
+              0.6337294578552246,
+              0.6364626884460449,
+              0.6400187015533447,
+              0.6445060968399048,
+              0.6460221409797668
+            ]
+          },
+          "top_3_products": [
+            "/images/product_13.jpg",
+            "/images/product_36.jpg",
+            "/images/product_18.jpg"
+          ],
+          "query_time": 0.20212268829345703
+        },
+        {
+          "input_image": "TC-H06_input_grey_hoodie_2.jpg",
+          "search_results": {
+            "query_time": 0.18133854866027832,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "13",
+              "36",
+              "18",
+              "23",
+              "32",
+              "47",
+              "15",
+              "51",
+              "48",
+              "52"
+            ],
+            "image_urls": [
+              "/images/product_13.jpg",
+              "/images/product_36.jpg",
+              "/images/product_18.jpg",
+              "/images/product_23.jpg",
+              "/images/product_32.jpg",
+              "/images/product_47.jpg",
+              "/images/product_15.jpg",
+              "/images/product_51.jpg",
+              "/images/product_48.jpg",
+              "/images/product_52.jpg"
+            ],
+            "titles": [
+              "White Casual Sneakers",
+              "Blue Premium Ripped Street Jeans",
+              "Grey Premium Winter Hoodie",
+              "Black Smart Casual Blazer",
+              "Brown Trekking Boots",
+              "Black Biker Leather Jacket",
+              "Black Premium Leather Shoes",
+              "Premium Floral Vacation Skirt",
+              "Black Premium Biker Leather Jacket",
+              "Navy Formal Blazer"
+            ],
+            "scores": [
+              0.5381624102592468,
+              0.5810332298278809,
+              0.6090164184570312,
+              0.6108902096748352,
+              0.6544101238250732,
+              0.6590360403060913,
+              0.6675981283187866,
+              0.6692709922790527,
+              0.6940665245056152,
+              0.6978609561920166
+            ]
+          },
+          "top_3_products": [
+            "/images/product_13.jpg",
+            "/images/product_36.jpg",
+            "/images/product_18.jpg"
+          ],
+          "query_time": 0.18133854866027832
+        },
+        {
+          "input_image": "TC-H06_input_grey_hoodie_3.jpg",
+          "search_results": {
+            "query_time": 0.2183699607849121,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "18",
+              "23",
+              "36",
+              "13",
+              "52",
+              "32",
+              "48",
+              "51",
+              "22",
+              "16"
+            ],
+            "image_urls": [
+              "/images/product_18.jpg",
+              "/images/product_23.jpg",
+              "/images/product_36.jpg",
+              "/images/product_13.jpg",
+              "/images/product_52.jpg",
+              "/images/product_32.jpg",
+              "/images/product_48.jpg",
+              "/images/product_51.jpg",
+              "/images/product_22.jpg",
+              "/images/product_16.jpg"
+            ],
+            "titles": [
+              "Grey Premium Winter Hoodie",
+              "Black Smart Casual Blazer",
+              "Blue Premium Ripped Street Jeans",
+              "White Casual Sneakers",
+              "Navy Formal Blazer",
+              "Brown Trekking Boots",
+              "Black Premium Biker Leather Jacket",
+              "Premium Floral Vacation Skirt",
+              "Black Casual Blazer",
+              "Grey Casual Hoodie"
+            ],
+            "scores": [
+              0.5354856252670288,
+              0.5691250562667847,
+              0.5702544450759888,
+              0.5720498561859131,
+              0.5955830812454224,
+              0.6117157340049744,
+              0.6223437786102295,
+              0.6253631114959717,
+              0.6305161714553833,
+              0.6442368030548096
+            ]
+          },
+          "top_3_products": [
+            "/images/product_18.jpg",
+            "/images/product_23.jpg",
+            "/images/product_36.jpg"
+          ],
+          "query_time": 0.2183699607849121
+        }
+      ]
+    },
+    {
+      "id": "TC-H07",
+      "description": "yellow_kurti",
+      "text_query": "festive embroidered kurti",
+      "alpha": 0.6,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H07_input_yellow_kurti_1.jpg",
+          "search_results": {
+            "query_time": 0.19324946403503418,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "21",
+              "9",
+              "20",
+              "7",
+              "19",
+              "26",
+              "34",
+              "33",
+              "16",
+              "18"
+            ],
+            "image_urls": [
+              "/images/product_21.jpg",
+              "/images/product_9.jpg",
+              "/images/product_20.jpg",
+              "/images/product_7.jpg",
+              "/images/product_19.jpg",
+              "/images/product_26.jpg",
+              "/images/product_34.jpg",
+              "/images/product_33.jpg",
+              "/images/product_16.jpg",
+              "/images/product_18.jpg"
+            ],
+            "titles": [
+              "Yellow Premium Festive Kurti",
+              "Black Printed Streetwear Tee",
+              "Yellow Festive Embroidered Kurti",
+              "Black Plain T-Shirt",
+              "Yellow Casual Kurti",
+              "White Lightweight Summer Shirt",
+              "Blue Casual Jeans",
+              "Brown Premium Hiking Boots",
+              "Grey Casual Hoodie",
+              "Grey Premium Winter Hoodie"
+            ],
+            "scores": [
+              0.5663105249404907,
+              0.5701580047607422,
+              0.57096266746521,
+              0.5914348363876343,
+              0.6022723913192749,
+              0.6284019947052002,
+              0.6480526924133301,
+              0.6609381437301636,
+              0.6617546081542969,
+              0.6738995313644409
+            ]
+          },
+          "top_3_products": [
+            "/images/product_21.jpg",
+            "/images/product_9.jpg",
+            "/images/product_20.jpg"
+          ],
+          "query_time": 0.19324946403503418
+        },
+        {
+          "input_image": "TC-H07_input_yellow_kurti_2.jpg",
+          "search_results": {
+            "query_time": 0.20750880241394043,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "19",
+              "20",
+              "7",
+              "9",
+              "21",
+              "34",
+              "33",
+              "8",
+              "16",
+              "26"
+            ],
+            "image_urls": [
+              "/images/product_19.jpg",
+              "/images/product_20.jpg",
+              "/images/product_7.jpg",
+              "/images/product_9.jpg",
+              "/images/product_21.jpg",
+              "/images/product_34.jpg",
+              "/images/product_33.jpg",
+              "/images/product_8.jpg",
+              "/images/product_16.jpg",
+              "/images/product_26.jpg"
+            ],
+            "titles": [
+              "Yellow Casual Kurti",
+              "Yellow Festive Embroidered Kurti",
+              "Black Plain T-Shirt",
+              "Black Printed Streetwear Tee",
+              "Yellow Premium Festive Kurti",
+              "Blue Casual Jeans",
+              "Brown Premium Hiking Boots",
+              "Black Graphic Streetwear T-Shirt",
+              "Grey Casual Hoodie",
+              "White Lightweight Summer Shirt"
+            ],
+            "scores": [
+              0.5677725076675415,
+              0.5706766247749329,
+              0.582319974899292,
+              0.5834363102912903,
+              0.5919177532196045,
+              0.6416483521461487,
+              0.6749085187911987,
+              0.6893603801727295,
+              0.690822184085846,
+              0.6937044858932495
+            ]
+          },
+          "top_3_products": [
+            "/images/product_19.jpg",
+            "/images/product_20.jpg",
+            "/images/product_7.jpg"
+          ],
+          "query_time": 0.20750880241394043
+        },
+        {
+          "input_image": "TC-H07_input_yellow_kurti_3.jpg",
+          "search_results": {
+            "query_time": 0.19278383255004883,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "20",
+              "21",
+              "9",
+              "7",
+              "19",
+              "34",
+              "33",
+              "18",
+              "35",
+              "26"
+            ],
+            "image_urls": [
+              "/images/product_20.jpg",
+              "/images/product_21.jpg",
+              "/images/product_9.jpg",
+              "/images/product_7.jpg",
+              "/images/product_19.jpg",
+              "/images/product_34.jpg",
+              "/images/product_33.jpg",
+              "/images/product_18.jpg",
+              "/images/product_35.jpg",
+              "/images/product_26.jpg"
+            ],
+            "titles": [
+              "Yellow Festive Embroidered Kurti",
+              "Yellow Premium Festive Kurti",
+              "Black Printed Streetwear Tee",
+              "Black Plain T-Shirt",
+              "Yellow Casual Kurti",
+              "Blue Casual Jeans",
+              "Brown Premium Hiking Boots",
+              "Grey Premium Winter Hoodie",
+              "Blue Ripped Distressed Jeans",
+              "White Lightweight Summer Shirt"
+            ],
+            "scores": [
+              0.5139894485473633,
+              0.5382788181304932,
+              0.5439459085464478,
+              0.566815197467804,
+              0.5764796733856201,
+              0.6204648613929749,
+              0.6295500993728638,
+              0.6317764520645142,
+              0.640174388885498,
+              0.6552618741989136
+            ]
+          },
+          "top_3_products": [
+            "/images/product_20.jpg",
+            "/images/product_21.jpg",
+            "/images/product_9.jpg"
+          ],
+          "query_time": 0.19278383255004883
+        }
+      ]
+    },
+    {
+      "id": "TC-H08",
+      "description": "black_blazer",
+      "text_query": "smart casual evening outfit",
+      "alpha": 0.55,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H08_input_black_blazer_1.jpg",
+          "search_results": {
+            "query_time": 0.22108960151672363,
+            "search_type": "hybrid",
+            "alpha_used": 0.55,
+            "total_results": 10,
+            "product_ids": [
+              "23",
+              "22",
+              "48",
+              "52",
+              "6",
+              "47",
+              "36",
+              "4",
+              "46",
+              "24"
+            ],
+            "image_urls": [
+              "/images/product_23.jpg",
+              "/images/product_22.jpg",
+              "/images/product_48.jpg",
+              "/images/product_52.jpg",
+              "/images/product_6.jpg",
+              "/images/product_47.jpg",
+              "/images/product_36.jpg",
+              "/images/product_4.jpg",
+              "/images/product_46.jpg",
+              "/images/product_24.jpg"
+            ],
+            "titles": [
+              "Black Smart Casual Blazer",
+              "Black Casual Blazer",
+              "Black Premium Biker Leather Jacket",
+              "Navy Formal Blazer",
+              "Navy Formal Office Blazer",
+              "Black Biker Leather Jacket",
+              "Blue Premium Ripped Street Jeans",
+              "Blue Denim Jacket",
+              "Brown Leather Jacket",
+              "Black Premium Evening Blazer"
+            ],
+            "scores": [
+              0.34523478150367737,
+              0.44132769107818604,
+              0.46464619040489197,
+              0.46876031160354614,
+              0.5309070348739624,
+              0.5842006802558899,
+              0.596063494682312,
+              0.6133898496627808,
+              0.6159412264823914,
+              0.6472451686859131
+            ]
+          },
+          "top_3_products": [
+            "/images/product_23.jpg",
+            "/images/product_22.jpg",
+            "/images/product_48.jpg"
+          ],
+          "query_time": 0.22108960151672363
+        },
+        {
+          "input_image": "TC-H08_input_black_blazer_2.jpg",
+          "search_results": {
+            "query_time": 0.20665836334228516,
+            "search_type": "hybrid",
+            "alpha_used": 0.55,
+            "total_results": 10,
+            "product_ids": [
+              "23",
+              "52",
+              "22",
+              "48",
+              "6",
+              "47",
+              "4",
+              "24",
+              "3",
+              "36"
+            ],
+            "image_urls": [
+              "/images/product_23.jpg",
+              "/images/product_52.jpg",
+              "/images/product_22.jpg",
+              "/images/product_48.jpg",
+              "/images/product_6.jpg",
+              "/images/product_47.jpg",
+              "/images/product_4.jpg",
+              "/images/product_24.jpg",
+              "/images/product_3.jpg",
+              "/images/product_36.jpg"
+            ],
+            "titles": [
+              "Black Smart Casual Blazer",
+              "Navy Formal Blazer",
+              "Black Casual Blazer",
+              "Black Premium Biker Leather Jacket",
+              "Navy Formal Office Blazer",
+              "Black Biker Leather Jacket",
+              "Blue Denim Jacket",
+              "Black Premium Evening Blazer",
+              "Red Velvet Wedding Dress",
+              "Blue Premium Ripped Street Jeans"
+            ],
+            "scores": [
+              0.352289617061615,
+              0.4298267364501953,
+              0.4524756669998169,
+              0.47739142179489136,
+              0.5352721214294434,
+              0.5933128595352173,
+              0.5940994024276733,
+              0.6334342360496521,
+              0.635657548904419,
+              0.6365199089050293
+            ]
+          },
+          "top_3_products": [
+            "/images/product_23.jpg",
+            "/images/product_52.jpg",
+            "/images/product_22.jpg"
+          ],
+          "query_time": 0.20665836334228516
+        },
+        {
+          "input_image": "TC-H08_input_black_blazer_3.jpg",
+          "search_results": {
+            "query_time": 0.19819355010986328,
+            "search_type": "hybrid",
+            "alpha_used": 0.55,
+            "total_results": 10,
+            "product_ids": [
+              "23",
+              "52",
+              "48",
+              "22",
+              "6",
+              "47",
+              "4",
+              "36",
+              "35",
+              "24"
+            ],
+            "image_urls": [
+              "/images/product_23.jpg",
+              "/images/product_52.jpg",
+              "/images/product_48.jpg",
+              "/images/product_22.jpg",
+              "/images/product_6.jpg",
+              "/images/product_47.jpg",
+              "/images/product_4.jpg",
+              "/images/product_36.jpg",
+              "/images/product_35.jpg",
+              "/images/product_24.jpg"
+            ],
+            "titles": [
+              "Black Smart Casual Blazer",
+              "Navy Formal Blazer",
+              "Black Premium Biker Leather Jacket",
+              "Black Casual Blazer",
+              "Navy Formal Office Blazer",
+              "Black Biker Leather Jacket",
+              "Blue Denim Jacket",
+              "Blue Premium Ripped Street Jeans",
+              "Blue Ripped Distressed Jeans",
+              "Black Premium Evening Blazer"
+            ],
+            "scores": [
+              0.34937167167663574,
+              0.4363608956336975,
+              0.4474322199821472,
+              0.45151466131210327,
+              0.5268703103065491,
+              0.5735834240913391,
+              0.5814269781112671,
+              0.614466667175293,
+              0.6183419227600098,
+              0.6212732195854187
+            ]
+          },
+          "top_3_products": [
+            "/images/product_23.jpg",
+            "/images/product_52.jpg",
+            "/images/product_48.jpg"
+          ],
+          "query_time": 0.19819355010986328
+        }
+      ]
+    },
+    {
+      "id": "TC-H09",
+      "description": "white_shirt",
+      "text_query": "lightweight summer shirt",
+      "alpha": 0.6,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H09_input_white_shirt_1.jpg",
+          "search_results": {
+            "query_time": 0.21283364295959473,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "23",
+              "26",
+              "22",
+              "25",
+              "36",
+              "27",
+              "40",
+              "49",
+              "6",
+              "48"
+            ],
+            "image_urls": [
+              "/images/product_23.jpg",
+              "/images/product_26.jpg",
+              "/images/product_22.jpg",
+              "/images/product_25.jpg",
+              "/images/product_36.jpg",
+              "/images/product_27.jpg",
+              "/images/product_40.jpg",
+              "/images/product_49.jpg",
+              "/images/product_6.jpg",
+              "/images/product_48.jpg"
+            ],
+            "titles": [
+              "Black Smart Casual Blazer",
+              "White Lightweight Summer Shirt",
+              "Black Casual Blazer",
+              "White Casual Shirt",
+              "Blue Premium Ripped Street Jeans",
+              "White Premium Linen Summer Shirt",
+              "Green Casual T-Shirt",
+              "Colorful Casual Skirt",
+              "Navy Formal Office Blazer",
+              "Black Premium Biker Leather Jacket"
+            ],
+            "scores": [
+              0.4176274240016937,
+              0.49032995104789734,
+              0.5397533178329468,
+              0.5443366169929504,
+              0.5662536025047302,
+              0.5701382160186768,
+              0.5914812088012695,
+              0.6046543717384338,
+              0.6394509077072144,
+              0.654682993888855
+            ]
+          },
+          "top_3_products": [
+            "/images/product_23.jpg",
+            "/images/product_26.jpg",
+            "/images/product_22.jpg"
+          ],
+          "query_time": 0.21283364295959473
+        },
+        {
+          "input_image": "TC-H09_input_white_shirt_2.jpg",
+          "search_results": {
+            "query_time": 0.20735597610473633,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "23",
+              "26",
+              "22",
+              "25",
+              "36",
+              "52",
+              "19",
+              "6",
+              "49",
+              "48"
+            ],
+            "image_urls": [
+              "/images/product_23.jpg",
+              "/images/product_26.jpg",
+              "/images/product_22.jpg",
+              "/images/product_25.jpg",
+              "/images/product_36.jpg",
+              "/images/product_52.jpg",
+              "/images/product_19.jpg",
+              "/images/product_6.jpg",
+              "/images/product_49.jpg",
+              "/images/product_48.jpg"
+            ],
+            "titles": [
+              "Black Smart Casual Blazer",
+              "White Lightweight Summer Shirt",
+              "Black Casual Blazer",
+              "White Casual Shirt",
+              "Blue Premium Ripped Street Jeans",
+              "Navy Formal Blazer",
+              "Yellow Casual Kurti",
+              "Navy Formal Office Blazer",
+              "Colorful Casual Skirt",
+              "Black Premium Biker Leather Jacket"
+            ],
+            "scores": [
+              0.3957133889198303,
+              0.46473294496536255,
+              0.502676248550415,
+              0.5084906816482544,
+              0.578485369682312,
+              0.5832209587097168,
+              0.5957087278366089,
+              0.6033483743667603,
+              0.6107625961303711,
+              0.6166921854019165
+            ]
+          },
+          "top_3_products": [
+            "/images/product_23.jpg",
+            "/images/product_26.jpg",
+            "/images/product_22.jpg"
+          ],
+          "query_time": 0.20735597610473633
+        },
+        {
+          "input_image": "TC-H09_input_white_shirt_3.jpg",
+          "search_results": {
+            "query_time": 0.2182149887084961,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "23",
+              "26",
+              "25",
+              "36",
+              "22",
+              "49",
+              "27",
+              "40",
+              "48",
+              "6"
+            ],
+            "image_urls": [
+              "/images/product_23.jpg",
+              "/images/product_26.jpg",
+              "/images/product_25.jpg",
+              "/images/product_36.jpg",
+              "/images/product_22.jpg",
+              "/images/product_49.jpg",
+              "/images/product_27.jpg",
+              "/images/product_40.jpg",
+              "/images/product_48.jpg",
+              "/images/product_6.jpg"
+            ],
+            "titles": [
+              "Black Smart Casual Blazer",
+              "White Lightweight Summer Shirt",
+              "White Casual Shirt",
+              "Blue Premium Ripped Street Jeans",
+              "Black Casual Blazer",
+              "Colorful Casual Skirt",
+              "White Premium Linen Summer Shirt",
+              "Green Casual T-Shirt",
+              "Black Premium Biker Leather Jacket",
+              "Navy Formal Office Blazer"
+            ],
+            "scores": [
+              0.44078966975212097,
+              0.5207592248916626,
+              0.5595031976699829,
+              0.5754269361495972,
+              0.5833542346954346,
+              0.584596574306488,
+              0.594436526298523,
+              0.6167055368423462,
+              0.6426485776901245,
+              0.645786702632904
+            ]
+          },
+          "top_3_products": [
+            "/images/product_23.jpg",
+            "/images/product_26.jpg",
+            "/images/product_25.jpg"
+          ],
+          "query_time": 0.2182149887084961
+        }
+      ]
+    },
+    {
+      "id": "TC-H10",
+      "description": "pink_midi_dress",
+      "text_query": "elegant wedding guest outfit",
+      "alpha": 0.6,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H10_input_pink_midi_dress_1.jpg",
+          "search_results": {
+            "query_time": 0.1980271339416504,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "26",
+              "25",
+              "35",
+              "3",
+              "30",
+              "40",
+              "23",
+              "52",
+              "7",
+              "46"
+            ],
+            "image_urls": [
+              "/images/product_26.jpg",
+              "/images/product_25.jpg",
+              "/images/product_35.jpg",
+              "/images/product_3.jpg",
+              "/images/product_30.jpg",
+              "/images/product_40.jpg",
+              "/images/product_23.jpg",
+              "/images/product_52.jpg",
+              "/images/product_7.jpg",
+              "/images/product_46.jpg"
+            ],
+            "titles": [
+              "White Lightweight Summer Shirt",
+              "White Casual Shirt",
+              "Blue Ripped Distressed Jeans",
+              "Red Velvet Wedding Dress",
+              "Pink Elegant Cocktail Dress",
+              "Green Casual T-Shirt",
+              "Black Smart Casual Blazer",
+              "Navy Formal Blazer",
+              "Black Plain T-Shirt",
+              "Brown Leather Jacket"
+            ],
+            "scores": [
+              0.4539705514907837,
+              0.517381489276886,
+              0.5304204225540161,
+              0.5313396453857422,
+              0.5658903121948242,
+              0.5940690040588379,
+              0.5969222784042358,
+              0.6192398071289062,
+              0.6219236850738525,
+              0.6232573986053467
+            ]
+          },
+          "top_3_products": [
+            "/images/product_26.jpg",
+            "/images/product_25.jpg",
+            "/images/product_35.jpg"
+          ],
+          "query_time": 0.1980271339416504
+        },
+        {
+          "input_image": "TC-H10_input_pink_midi_dress_2.jpg",
+          "search_results": {
+            "query_time": 0.19469523429870605,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "26",
+              "3",
+              "35",
+              "30",
+              "25",
+              "40",
+              "52",
+              "23",
+              "7",
+              "46"
+            ],
+            "image_urls": [
+              "/images/product_26.jpg",
+              "/images/product_3.jpg",
+              "/images/product_35.jpg",
+              "/images/product_30.jpg",
+              "/images/product_25.jpg",
+              "/images/product_40.jpg",
+              "/images/product_52.jpg",
+              "/images/product_23.jpg",
+              "/images/product_7.jpg",
+              "/images/product_46.jpg"
+            ],
+            "titles": [
+              "White Lightweight Summer Shirt",
+              "Red Velvet Wedding Dress",
+              "Blue Ripped Distressed Jeans",
+              "Pink Elegant Cocktail Dress",
+              "White Casual Shirt",
+              "Green Casual T-Shirt",
+              "Navy Formal Blazer",
+              "Black Smart Casual Blazer",
+              "Black Plain T-Shirt",
+              "Brown Leather Jacket"
+            ],
+            "scores": [
+              0.4684620499610901,
+              0.4933052957057953,
+              0.5004470944404602,
+              0.5374971032142639,
+              0.537746012210846,
+              0.5677685737609863,
+              0.5678110122680664,
+              0.583590567111969,
+              0.5971644520759583,
+              0.6099866628646851
+            ]
+          },
+          "top_3_products": [
+            "/images/product_26.jpg",
+            "/images/product_3.jpg",
+            "/images/product_35.jpg"
+          ],
+          "query_time": 0.19469523429870605
+        }
+      ]
+    },
+    {
+      "id": "TC-H11",
+      "description": "brown_boots",
+      "text_query": "hiking outdoor footwear",
+      "alpha": 0.65,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H11_input_brown_boots_1.jpg",
+          "search_results": {
+            "query_time": 0.21227240562438965,
+            "search_type": "hybrid",
+            "alpha_used": 0.65,
+            "total_results": 10,
+            "product_ids": [
+              "32",
+              "31",
+              "33",
+              "14",
+              "36",
+              "15",
+              "40",
+              "27",
+              "13",
+              "52"
+            ],
+            "image_urls": [
+              "/images/product_32.jpg",
+              "/images/product_31.jpg",
+              "/images/product_33.jpg",
+              "/images/product_14.jpg",
+              "/images/product_36.jpg",
+              "/images/product_15.jpg",
+              "/images/product_40.jpg",
+              "/images/product_27.jpg",
+              "/images/product_13.jpg",
+              "/images/product_52.jpg"
+            ],
+            "titles": [
+              "Brown Trekking Boots",
+              "Brown Casual Boots",
+              "Brown Premium Hiking Boots",
+              "Black Leather Formal Shoes",
+              "Blue Premium Ripped Street Jeans",
+              "Black Premium Leather Shoes",
+              "Green Casual T-Shirt",
+              "White Premium Linen Summer Shirt",
+              "White Casual Sneakers",
+              "Navy Formal Blazer"
+            ],
+            "scores": [
+              0.4069746136665344,
+              0.6539272665977478,
+              0.7071366310119629,
+              0.7324230670928955,
+              0.7347903251647949,
+              0.7580404281616211,
+              0.7611445188522339,
+              0.7682172656059265,
+              0.7792184352874756,
+              0.7918030023574829
+            ]
+          },
+          "top_3_products": [
+            "/images/product_32.jpg",
+            "/images/product_31.jpg",
+            "/images/product_33.jpg"
+          ],
+          "query_time": 0.21227240562438965
+        },
+        {
+          "input_image": "TC-H11_input_brown_boots_2.jpg",
+          "search_results": {
+            "query_time": 0.26682209968566895,
+            "search_type": "hybrid",
+            "alpha_used": 0.65,
+            "total_results": 10,
+            "product_ids": [
+              "32",
+              "31",
+              "33",
+              "36",
+              "15",
+              "14",
+              "40",
+              "46",
+              "35",
+              "41"
+            ],
+            "image_urls": [
+              "/images/product_32.jpg",
+              "/images/product_31.jpg",
+              "/images/product_33.jpg",
+              "/images/product_36.jpg",
+              "/images/product_15.jpg",
+              "/images/product_14.jpg",
+              "/images/product_40.jpg",
+              "/images/product_46.jpg",
+              "/images/product_35.jpg",
+              "/images/product_41.jpg"
+            ],
+            "titles": [
+              "Brown Trekking Boots",
+              "Brown Casual Boots",
+              "Brown Premium Hiking Boots",
+              "Blue Premium Ripped Street Jeans",
+              "Black Premium Leather Shoes",
+              "Black Leather Formal Shoes",
+              "Green Casual T-Shirt",
+              "Brown Leather Jacket",
+              "Blue Ripped Distressed Jeans",
+              "Green Athletic Performance T-Shirt"
+            ],
+            "scores": [
+              0.3805151879787445,
+              0.6532144546508789,
+              0.6947834491729736,
+              0.7468010187149048,
+              0.7530202865600586,
+              0.7594459056854248,
+              0.7635952234268188,
+              0.7663787603378296,
+              0.7738691568374634,
+              0.7944874167442322
+            ]
+          },
+          "top_3_products": [
+            "/images/product_32.jpg",
+            "/images/product_31.jpg",
+            "/images/product_33.jpg"
+          ],
+          "query_time": 0.26682209968566895
+        },
+        {
+          "input_image": "TC-H11_input_brown_boots_3.jpg",
+          "search_results": {
+            "query_time": 0.4502723217010498,
+            "search_type": "hybrid",
+            "alpha_used": 0.65,
+            "total_results": 10,
+            "product_ids": [
+              "32",
+              "31",
+              "33",
+              "15",
+              "14",
+              "36",
+              "40",
+              "12",
+              "23",
+              "48"
+            ],
+            "image_urls": [
+              "/images/product_32.jpg",
+              "/images/product_31.jpg",
+              "/images/product_33.jpg",
+              "/images/product_15.jpg",
+              "/images/product_14.jpg",
+              "/images/product_36.jpg",
+              "/images/product_40.jpg",
+              "/images/product_12.jpg",
+              "/images/product_23.jpg",
+              "/images/product_48.jpg"
+            ],
+            "titles": [
+              "Brown Trekking Boots",
+              "Brown Casual Boots",
+              "Brown Premium Hiking Boots",
+              "Black Premium Leather Shoes",
+              "Black Leather Formal Shoes",
+              "Blue Premium Ripped Street Jeans",
+              "Green Casual T-Shirt",
+              "Green Traditional Bridal Saree",
+              "Black Smart Casual Blazer",
+              "Black Premium Biker Leather Jacket"
+            ],
+            "scores": [
+              0.4335401654243469,
+              0.6266911029815674,
+              0.6726089715957642,
+              0.6802138090133667,
+              0.6870625019073486,
+              0.7018164992332458,
+              0.7138676643371582,
+              0.7397212982177734,
+              0.7431074380874634,
+              0.745956540107727
+            ]
+          },
+          "top_3_products": [
+            "/images/product_32.jpg",
+            "/images/product_31.jpg",
+            "/images/product_33.jpg"
+          ],
+          "query_time": 0.4502723217010498
+        }
+      ]
+    },
+    {
+      "id": "TC-H12",
+      "description": "blue_jeans",
+      "text_query": "ripped distressed street style jeans",
+      "alpha": 0.7,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H12_input_blue_jeans_1.jpg",
+          "search_results": {
+            "query_time": 0.20402288436889648,
+            "search_type": "hybrid",
+            "alpha_used": 0.7,
+            "total_results": 10,
+            "product_ids": [
+              "36",
+              "35",
+              "32",
+              "47",
+              "34",
+              "48",
+              "30",
+              "49",
+              "23",
+              "52"
+            ],
+            "image_urls": [
+              "/images/product_36.jpg",
+              "/images/product_35.jpg",
+              "/images/product_32.jpg",
+              "/images/product_47.jpg",
+              "/images/product_34.jpg",
+              "/images/product_48.jpg",
+              "/images/product_30.jpg",
+              "/images/product_49.jpg",
+              "/images/product_23.jpg",
+              "/images/product_52.jpg"
+            ],
+            "titles": [
+              "Blue Premium Ripped Street Jeans",
+              "Blue Ripped Distressed Jeans",
+              "Brown Trekking Boots",
+              "Black Biker Leather Jacket",
+              "Blue Casual Jeans",
+              "Black Premium Biker Leather Jacket",
+              "Pink Elegant Cocktail Dress",
+              "Colorful Casual Skirt",
+              "Black Smart Casual Blazer",
+              "Navy Formal Blazer"
+            ],
+            "scores": [
+              0.4355629086494446,
+              0.4633566737174988,
+              0.4956490993499756,
+              0.620455265045166,
+              0.630539059638977,
+              0.6313468217849731,
+              0.634032130241394,
+              0.6409381628036499,
+              0.6604244709014893,
+              0.6936108469963074
+            ]
+          },
+          "top_3_products": [
+            "/images/product_36.jpg",
+            "/images/product_35.jpg",
+            "/images/product_32.jpg"
+          ],
+          "query_time": 0.20402288436889648
+        },
+        {
+          "input_image": "TC-H12_input_blue_jeans_2.jpg",
+          "search_results": {
+            "query_time": 0.20044684410095215,
+            "search_type": "hybrid",
+            "alpha_used": 0.7,
+            "total_results": 10,
+            "product_ids": [
+              "36",
+              "32",
+              "35",
+              "48",
+              "23",
+              "49",
+              "34",
+              "47",
+              "30",
+              "52"
+            ],
+            "image_urls": [
+              "/images/product_36.jpg",
+              "/images/product_32.jpg",
+              "/images/product_35.jpg",
+              "/images/product_48.jpg",
+              "/images/product_23.jpg",
+              "/images/product_49.jpg",
+              "/images/product_34.jpg",
+              "/images/product_47.jpg",
+              "/images/product_30.jpg",
+              "/images/product_52.jpg"
+            ],
+            "titles": [
+              "Blue Premium Ripped Street Jeans",
+              "Brown Trekking Boots",
+              "Blue Ripped Distressed Jeans",
+              "Black Premium Biker Leather Jacket",
+              "Black Smart Casual Blazer",
+              "Colorful Casual Skirt",
+              "Blue Casual Jeans",
+              "Black Biker Leather Jacket",
+              "Pink Elegant Cocktail Dress",
+              "Navy Formal Blazer"
+            ],
+            "scores": [
+              0.41446179151535034,
+              0.4971461892127991,
+              0.49810418486595154,
+              0.6223664283752441,
+              0.6226987838745117,
+              0.650206446647644,
+              0.6546754837036133,
+              0.6558774709701538,
+              0.6808042526245117,
+              0.6823520660400391
+            ]
+          },
+          "top_3_products": [
+            "/images/product_36.jpg",
+            "/images/product_32.jpg",
+            "/images/product_35.jpg"
+          ],
+          "query_time": 0.20044684410095215
+        },
+        {
+          "input_image": "TC-H12_input_blue_jeans_3.jpg",
+          "search_results": {
+            "query_time": 0.2039186954498291,
+            "search_type": "hybrid",
+            "alpha_used": 0.7,
+            "total_results": 10,
+            "product_ids": [
+              "36",
+              "35",
+              "32",
+              "23",
+              "34",
+              "48",
+              "47",
+              "30",
+              "52",
+              "49"
+            ],
+            "image_urls": [
+              "/images/product_36.jpg",
+              "/images/product_35.jpg",
+              "/images/product_32.jpg",
+              "/images/product_23.jpg",
+              "/images/product_34.jpg",
+              "/images/product_48.jpg",
+              "/images/product_47.jpg",
+              "/images/product_30.jpg",
+              "/images/product_52.jpg",
+              "/images/product_49.jpg"
+            ],
+            "titles": [
+              "Blue Premium Ripped Street Jeans",
+              "Blue Ripped Distressed Jeans",
+              "Brown Trekking Boots",
+              "Black Smart Casual Blazer",
+              "Blue Casual Jeans",
+              "Black Premium Biker Leather Jacket",
+              "Black Biker Leather Jacket",
+              "Pink Elegant Cocktail Dress",
+              "Navy Formal Blazer",
+              "Colorful Casual Skirt"
+            ],
+            "scores": [
+              0.4749361276626587,
+              0.4750993847846985,
+              0.5328639149665833,
+              0.6416795253753662,
+              0.6445088982582092,
+              0.649583101272583,
+              0.6579434871673584,
+              0.6600381135940552,
+              0.6627336740493774,
+              0.6654354333877563
+            ]
+          },
+          "top_3_products": [
+            "/images/product_36.jpg",
+            "/images/product_35.jpg",
+            "/images/product_32.jpg"
+          ],
+          "query_time": 0.2039186954498291
+        }
+      ]
+    },
+    {
+      "id": "TC-H13",
+      "description": "black_saree",
+      "text_query": "reception party wear saree",
+      "alpha": 0.5,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H13_input_black_saree_1.jpg",
+          "search_results": {
+            "query_time": 0.18859386444091797,
+            "search_type": "hybrid",
+            "alpha_used": 0.5,
+            "total_results": 10,
+            "product_ids": [
+              "39",
+              "7",
+              "37",
+              "35",
+              "9",
+              "10",
+              "11",
+              "38",
+              "34",
+              "8"
+            ],
+            "image_urls": [
+              "/images/product_39.jpg",
+              "/images/product_7.jpg",
+              "/images/product_37.jpg",
+              "/images/product_35.jpg",
+              "/images/product_9.jpg",
+              "/images/product_10.jpg",
+              "/images/product_11.jpg",
+              "/images/product_38.jpg",
+              "/images/product_34.jpg",
+              "/images/product_8.jpg"
+            ],
+            "titles": [
+              "Black Heavy Reception Saree",
+              "Black Plain T-Shirt",
+              "Black Traditional Saree",
+              "Blue Ripped Distressed Jeans",
+              "Black Printed Streetwear Tee",
+              "Green Silk Saree",
+              "Green Embroidered Wedding Saree",
+              "Black Party Wear Saree",
+              "Blue Casual Jeans",
+              "Black Graphic Streetwear T-Shirt"
+            ],
+            "scores": [
+              0.5505023002624512,
+              0.6080394983291626,
+              0.6086416244506836,
+              0.6141922473907471,
+              0.6258097290992737,
+              0.6384333968162537,
+              0.6707061529159546,
+              0.6721770763397217,
+              0.6804936528205872,
+              0.6954139471054077
+            ]
+          },
+          "top_3_products": [
+            "/images/product_39.jpg",
+            "/images/product_7.jpg",
+            "/images/product_37.jpg"
+          ],
+          "query_time": 0.18859386444091797
+        },
+        {
+          "input_image": "TC-H13_input_black_saree_2.jpg",
+          "search_results": {
+            "query_time": 0.18196797370910645,
+            "search_type": "hybrid",
+            "alpha_used": 0.5,
+            "total_results": 10,
+            "product_ids": [
+              "9",
+              "7",
+              "39",
+              "37",
+              "34",
+              "35",
+              "8",
+              "10",
+              "33",
+              "38"
+            ],
+            "image_urls": [
+              "/images/product_9.jpg",
+              "/images/product_7.jpg",
+              "/images/product_39.jpg",
+              "/images/product_37.jpg",
+              "/images/product_34.jpg",
+              "/images/product_35.jpg",
+              "/images/product_8.jpg",
+              "/images/product_10.jpg",
+              "/images/product_33.jpg",
+              "/images/product_38.jpg"
+            ],
+            "titles": [
+              "Black Printed Streetwear Tee",
+              "Black Plain T-Shirt",
+              "Black Heavy Reception Saree",
+              "Black Traditional Saree",
+              "Blue Casual Jeans",
+              "Blue Ripped Distressed Jeans",
+              "Black Graphic Streetwear T-Shirt",
+              "Green Silk Saree",
+              "Brown Premium Hiking Boots",
+              "Black Party Wear Saree"
+            ],
+            "scores": [
+              0.49602192640304565,
+              0.49636727571487427,
+              0.5003159046173096,
+              0.5535646677017212,
+              0.5586440563201904,
+              0.5679636597633362,
+              0.5728379487991333,
+              0.5836575627326965,
+              0.5837712287902832,
+              0.5908856391906738
+            ]
+          },
+          "top_3_products": [
+            "/images/product_9.jpg",
+            "/images/product_7.jpg",
+            "/images/product_39.jpg"
+          ],
+          "query_time": 0.18196797370910645
+        },
+        {
+          "input_image": "TC-H13_input_black_saree_3.jpg",
+          "search_results": {
+            "query_time": 0.20196223258972168,
+            "search_type": "hybrid",
+            "alpha_used": 0.5,
+            "total_results": 10,
+            "product_ids": [
+              "8",
+              "34",
+              "9",
+              "39",
+              "7",
+              "35",
+              "33",
+              "38",
+              "37",
+              "10"
+            ],
+            "image_urls": [
+              "/images/product_8.jpg",
+              "/images/product_34.jpg",
+              "/images/product_9.jpg",
+              "/images/product_39.jpg",
+              "/images/product_7.jpg",
+              "/images/product_35.jpg",
+              "/images/product_33.jpg",
+              "/images/product_38.jpg",
+              "/images/product_37.jpg",
+              "/images/product_10.jpg"
+            ],
+            "titles": [
+              "Black Graphic Streetwear T-Shirt",
+              "Blue Casual Jeans",
+              "Black Printed Streetwear Tee",
+              "Black Heavy Reception Saree",
+              "Black Plain T-Shirt",
+              "Blue Ripped Distressed Jeans",
+              "Brown Premium Hiking Boots",
+              "Black Party Wear Saree",
+              "Black Traditional Saree",
+              "Green Silk Saree"
+            ],
+            "scores": [
+              0.591056227684021,
+              0.6046123504638672,
+              0.6127703189849854,
+              0.6166515350341797,
+              0.6438524723052979,
+              0.6847862601280212,
+              0.6888828277587891,
+              0.7012508511543274,
+              0.7148903012275696,
+              0.7506401538848877
+            ]
+          },
+          "top_3_products": [
+            "/images/product_8.jpg",
+            "/images/product_34.jpg",
+            "/images/product_9.jpg"
+          ],
+          "query_time": 0.20196223258972168
+        }
+      ]
+    },
+    {
+      "id": "TC-H14",
+      "description": "green_tshirt",
+      "text_query": "gym fitness performance t shirt",
+      "alpha": 0.6,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H14_input_green_tshirt_1.jpg",
+          "search_results": {
+            "query_time": 0.22355294227600098,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "41",
+              "40",
+              "49",
+              "42",
+              "37",
+              "36",
+              "9",
+              "7",
+              "23",
+              "51"
+            ],
+            "image_urls": [
+              "/images/product_41.jpg",
+              "/images/product_40.jpg",
+              "/images/product_49.jpg",
+              "/images/product_42.jpg",
+              "/images/product_37.jpg",
+              "/images/product_36.jpg",
+              "/images/product_9.jpg",
+              "/images/product_7.jpg",
+              "/images/product_23.jpg",
+              "/images/product_51.jpg"
+            ],
+            "titles": [
+              "Green Athletic Performance T-Shirt",
+              "Green Casual T-Shirt",
+              "Colorful Casual Skirt",
+              "Green Premium Fitness Tee",
+              "Black Traditional Saree",
+              "Blue Premium Ripped Street Jeans",
+              "Black Printed Streetwear Tee",
+              "Black Plain T-Shirt",
+              "Black Smart Casual Blazer",
+              "Premium Floral Vacation Skirt"
+            ],
+            "scores": [
+              0.4893215596675873,
+              0.494781494140625,
+              0.5007427930831909,
+              0.5164477229118347,
+              0.5654222369194031,
+              0.5845330357551575,
+              0.6314481496810913,
+              0.6405165195465088,
+              0.6564861536026001,
+              0.6896877288818359
+            ]
+          },
+          "top_3_products": [
+            "/images/product_41.jpg",
+            "/images/product_40.jpg",
+            "/images/product_49.jpg"
+          ],
+          "query_time": 0.22355294227600098
+        },
+        {
+          "input_image": "TC-H14_input_green_tshirt_2.jpg",
+          "search_results": {
+            "query_time": 0.21905231475830078,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "41",
+              "40",
+              "49",
+              "42",
+              "37",
+              "36",
+              "9",
+              "7",
+              "32",
+              "23"
+            ],
+            "image_urls": [
+              "/images/product_41.jpg",
+              "/images/product_40.jpg",
+              "/images/product_49.jpg",
+              "/images/product_42.jpg",
+              "/images/product_37.jpg",
+              "/images/product_36.jpg",
+              "/images/product_9.jpg",
+              "/images/product_7.jpg",
+              "/images/product_32.jpg",
+              "/images/product_23.jpg"
+            ],
+            "titles": [
+              "Green Athletic Performance T-Shirt",
+              "Green Casual T-Shirt",
+              "Colorful Casual Skirt",
+              "Green Premium Fitness Tee",
+              "Black Traditional Saree",
+              "Blue Premium Ripped Street Jeans",
+              "Black Printed Streetwear Tee",
+              "Black Plain T-Shirt",
+              "Brown Trekking Boots",
+              "Black Smart Casual Blazer"
+            ],
+            "scores": [
+              0.48772993683815,
+              0.4886716604232788,
+              0.5012844800949097,
+              0.5187750458717346,
+              0.5295512080192566,
+              0.5454398393630981,
+              0.6117534637451172,
+              0.6393195390701294,
+              0.6404626369476318,
+              0.6447213888168335
+            ]
+          },
+          "top_3_products": [
+            "/images/product_41.jpg",
+            "/images/product_40.jpg",
+            "/images/product_49.jpg"
+          ],
+          "query_time": 0.21905231475830078
+        },
+        {
+          "input_image": "TC-H14_input_green_tshirt_3.jpg",
+          "search_results": {
+            "query_time": 0.20556926727294922,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "36",
+              "42",
+              "37",
+              "9",
+              "41",
+              "40",
+              "7",
+              "49",
+              "23",
+              "22"
+            ],
+            "image_urls": [
+              "/images/product_36.jpg",
+              "/images/product_42.jpg",
+              "/images/product_37.jpg",
+              "/images/product_9.jpg",
+              "/images/product_41.jpg",
+              "/images/product_40.jpg",
+              "/images/product_7.jpg",
+              "/images/product_49.jpg",
+              "/images/product_23.jpg",
+              "/images/product_22.jpg"
+            ],
+            "titles": [
+              "Blue Premium Ripped Street Jeans",
+              "Green Premium Fitness Tee",
+              "Black Traditional Saree",
+              "Black Printed Streetwear Tee",
+              "Green Athletic Performance T-Shirt",
+              "Green Casual T-Shirt",
+              "Black Plain T-Shirt",
+              "Colorful Casual Skirt",
+              "Black Smart Casual Blazer",
+              "Black Casual Blazer"
+            ],
+            "scores": [
+              0.46379685401916504,
+              0.46994662284851074,
+              0.5251115560531616,
+              0.5298112630844116,
+              0.5490562319755554,
+              0.5511118173599243,
+              0.5606575012207031,
+              0.5833455324172974,
+              0.6141701936721802,
+              0.630017876625061
+            ]
+          },
+          "top_3_products": [
+            "/images/product_36.jpg",
+            "/images/product_42.jpg",
+            "/images/product_37.jpg"
+          ],
+          "query_time": 0.20556926727294922
+        }
+      ]
+    },
+    {
+      "id": "TC-H15",
+      "description": "white_heels",
+      "text_query": "bridal wedding heels elegant",
+      "alpha": 0.6,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H15_input_white_heels_1.jpg",
+          "search_results": {
+            "query_time": 0.22028660774230957,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "45",
+              "44",
+              "43",
+              "40",
+              "41",
+              "39",
+              "26",
+              "44",
+              "45",
+              "35"
+            ],
+            "image_urls": [
+              "/images/product_45.jpg",
+              "/images/product_44.jpg",
+              "/images/product_43.jpg",
+              "/images/product_40.jpg",
+              "/images/product_41.jpg",
+              "/images/product_39.jpg",
+              "/images/product_26.jpg",
+              "/images/product_44.jpg",
+              "/images/product_45.jpg",
+              "/images/product_35.jpg"
+            ],
+            "titles": [
+              "White Luxury Bridal Heels",
+              "White Bridal Wedding Heels",
+              "White Casual Heels",
+              "Green Casual T-Shirt",
+              "Green Athletic Performance T-Shirt",
+              "Black Heavy Reception Saree",
+              "White Lightweight Summer Shirt",
+              "White Bridal Wedding Heels",
+              "White Luxury Bridal Heels",
+              "Blue Ripped Distressed Jeans"
+            ],
+            "scores": [
+              0.41057202219963074,
+              0.5119512677192688,
+              0.5852847695350647,
+              0.5886443257331848,
+              0.6322954893112183,
+              0.6465600728988647,
+              0.6677578687667847,
+              0.6698282957077026,
+              0.6709227561950684,
+              0.7179665565490723
+            ]
+          },
+          "top_3_products": [
+            "/images/product_45.jpg",
+            "/images/product_44.jpg",
+            "/images/product_43.jpg"
+          ],
+          "query_time": 0.22028660774230957
+        },
+        {
+          "input_image": "TC-H15_input_white_heels_2.jpg",
+          "search_results": {
+            "query_time": 0.20910286903381348,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "45",
+              "44",
+              "40",
+              "41",
+              "43",
+              "39",
+              "26",
+              "45",
+              "44",
+              "32"
+            ],
+            "image_urls": [
+              "/images/product_45.jpg",
+              "/images/product_44.jpg",
+              "/images/product_40.jpg",
+              "/images/product_41.jpg",
+              "/images/product_43.jpg",
+              "/images/product_39.jpg",
+              "/images/product_26.jpg",
+              "/images/product_45.jpg",
+              "/images/product_44.jpg",
+              "/images/product_32.jpg"
+            ],
+            "titles": [
+              "White Luxury Bridal Heels",
+              "White Bridal Wedding Heels",
+              "Green Casual T-Shirt",
+              "Green Athletic Performance T-Shirt",
+              "White Casual Heels",
+              "Black Heavy Reception Saree",
+              "White Lightweight Summer Shirt",
+              "White Luxury Bridal Heels",
+              "White Bridal Wedding Heels",
+              "Brown Trekking Boots"
+            ],
+            "scores": [
+              0.4425157904624939,
+              0.47521600127220154,
+              0.5719605088233948,
+              0.5985202789306641,
+              0.6032877564430237,
+              0.6237569451332092,
+              0.6634708046913147,
+              0.6643210053443909,
+              0.664544939994812,
+              0.6649295091629028
+            ]
+          },
+          "top_3_products": [
+            "/images/product_45.jpg",
+            "/images/product_44.jpg",
+            "/images/product_40.jpg"
+          ],
+          "query_time": 0.20910286903381348
+        },
+        {
+          "input_image": "TC-H15_input_white_heels_3.jpeg",
+          "search_results": {
+            "query_time": 0.17020654678344727,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "45",
+              "44",
+              "43",
+              "41",
+              "40",
+              "45",
+              "44",
+              "26",
+              "39",
+              "35"
+            ],
+            "image_urls": [
+              "/images/product_45.jpg",
+              "/images/product_44.jpg",
+              "/images/product_43.jpg",
+              "/images/product_41.jpg",
+              "/images/product_40.jpg",
+              "/images/product_45.jpg",
+              "/images/product_44.jpg",
+              "/images/product_26.jpg",
+              "/images/product_39.jpg",
+              "/images/product_35.jpg"
+            ],
+            "titles": [
+              "White Luxury Bridal Heels",
+              "White Bridal Wedding Heels",
+              "White Casual Heels",
+              "Green Athletic Performance T-Shirt",
+              "Green Casual T-Shirt",
+              "White Luxury Bridal Heels",
+              "White Bridal Wedding Heels",
+              "White Lightweight Summer Shirt",
+              "Black Heavy Reception Saree",
+              "Blue Ripped Distressed Jeans"
+            ],
+            "scores": [
+              0.45219916105270386,
+              0.5398927927017212,
+              0.6315176486968994,
+              0.6754247546195984,
+              0.6783233880996704,
+              0.6783266067504883,
+              0.6875140070915222,
+              0.6881076097488403,
+              0.7108827829360962,
+              0.740175187587738
+            ]
+          },
+          "top_3_products": [
+            "/images/product_45.jpg",
+            "/images/product_44.jpg",
+            "/images/product_43.jpg"
+          ],
+          "query_time": 0.17020654678344727
+        }
+      ]
+    },
+    {
+      "id": "TC-H16",
+      "description": "leather_jacket",
+      "text_query": "biker street fashion jacket",
+      "alpha": 0.7,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H16_input_leather_jacket_1.jpg",
+          "search_results": {
+            "query_time": 0.2189021110534668,
+            "search_type": "hybrid",
+            "alpha_used": 0.7,
+            "total_results": 10,
+            "product_ids": [
+              "48",
+              "47",
+              "23",
+              "22",
+              "46",
+              "52",
+              "36",
+              "32",
+              "6",
+              "37"
+            ],
+            "image_urls": [
+              "/images/product_48.jpg",
+              "/images/product_47.jpg",
+              "/images/product_23.jpg",
+              "/images/product_22.jpg",
+              "/images/product_46.jpg",
+              "/images/product_52.jpg",
+              "/images/product_36.jpg",
+              "/images/product_32.jpg",
+              "/images/product_6.jpg",
+              "/images/product_37.jpg"
+            ],
+            "titles": [
+              "Black Premium Biker Leather Jacket",
+              "Black Biker Leather Jacket",
+              "Black Smart Casual Blazer",
+              "Black Casual Blazer",
+              "Brown Leather Jacket",
+              "Navy Formal Blazer",
+              "Blue Premium Ripped Street Jeans",
+              "Brown Trekking Boots",
+              "Navy Formal Office Blazer",
+              "Black Traditional Saree"
+            ],
+            "scores": [
+              0.3809925615787506,
+              0.44890397787094116,
+              0.5037705898284912,
+              0.561682939529419,
+              0.5812788605690002,
+              0.596511960029602,
+              0.6129148602485657,
+              0.6807889938354492,
+              0.6823434829711914,
+              0.6996409893035889
+            ]
+          },
+          "top_3_products": [
+            "/images/product_48.jpg",
+            "/images/product_47.jpg",
+            "/images/product_23.jpg"
+          ],
+          "query_time": 0.2189021110534668
+        },
+        {
+          "input_image": "TC-H16_input_leather_jacket_2.jpg",
+          "search_results": {
+            "query_time": 0.18355059623718262,
+            "search_type": "hybrid",
+            "alpha_used": 0.7,
+            "total_results": 10,
+            "product_ids": [
+              "48",
+              "47",
+              "23",
+              "46",
+              "52",
+              "22",
+              "32",
+              "35",
+              "36",
+              "42"
+            ],
+            "image_urls": [
+              "/images/product_48.jpg",
+              "/images/product_47.jpg",
+              "/images/product_23.jpg",
+              "/images/product_46.jpg",
+              "/images/product_52.jpg",
+              "/images/product_22.jpg",
+              "/images/product_32.jpg",
+              "/images/product_35.jpg",
+              "/images/product_36.jpg",
+              "/images/product_42.jpg"
+            ],
+            "titles": [
+              "Black Premium Biker Leather Jacket",
+              "Black Biker Leather Jacket",
+              "Black Smart Casual Blazer",
+              "Brown Leather Jacket",
+              "Navy Formal Blazer",
+              "Black Casual Blazer",
+              "Brown Trekking Boots",
+              "Blue Ripped Distressed Jeans",
+              "Blue Premium Ripped Street Jeans",
+              "Green Premium Fitness Tee"
+            ],
+            "scores": [
+              0.44780638813972473,
+              0.49840736389160156,
+              0.5496950149536133,
+              0.5799700021743774,
+              0.5836396217346191,
+              0.6179823875427246,
+              0.6576378345489502,
+              0.6760303974151611,
+              0.6844547986984253,
+              0.7261689901351929
+            ]
+          },
+          "top_3_products": [
+            "/images/product_48.jpg",
+            "/images/product_47.jpg",
+            "/images/product_23.jpg"
+          ],
+          "query_time": 0.18355059623718262
+        },
+        {
+          "input_image": "TC-H16_input_leather_jacket_3.jpg",
+          "search_results": {
+            "query_time": 0.21596455574035645,
+            "search_type": "hybrid",
+            "alpha_used": 0.7,
+            "total_results": 10,
+            "product_ids": [
+              "48",
+              "47",
+              "23",
+              "46",
+              "22",
+              "52",
+              "36",
+              "32",
+              "37",
+              "6"
+            ],
+            "image_urls": [
+              "/images/product_48.jpg",
+              "/images/product_47.jpg",
+              "/images/product_23.jpg",
+              "/images/product_46.jpg",
+              "/images/product_22.jpg",
+              "/images/product_52.jpg",
+              "/images/product_36.jpg",
+              "/images/product_32.jpg",
+              "/images/product_37.jpg",
+              "/images/product_6.jpg"
+            ],
+            "titles": [
+              "Black Premium Biker Leather Jacket",
+              "Black Biker Leather Jacket",
+              "Black Smart Casual Blazer",
+              "Brown Leather Jacket",
+              "Black Casual Blazer",
+              "Navy Formal Blazer",
+              "Blue Premium Ripped Street Jeans",
+              "Brown Trekking Boots",
+              "Black Traditional Saree",
+              "Navy Formal Office Blazer"
+            ],
+            "scores": [
+              0.3745415210723877,
+              0.42607375979423523,
+              0.49679243564605713,
+              0.5383209586143494,
+              0.5678701996803284,
+              0.5785713791847229,
+              0.6152546405792236,
+              0.6609799861907959,
+              0.6639573574066162,
+              0.6791408061981201
+            ]
+          },
+          "top_3_products": [
+            "/images/product_48.jpg",
+            "/images/product_47.jpg",
+            "/images/product_23.jpg"
+          ],
+          "query_time": 0.21596455574035645
+        }
+      ]
+    },
+    {
+      "id": "TC-H17",
+      "description": "floral_skirt",
+      "text_query": "summer beach vacation outfit",
+      "alpha": 0.6,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H17_input_floral_skirt_1.jpg",
+          "search_results": {
+            "query_time": 0.21066832542419434,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "51",
+              "49",
+              "26",
+              "40",
+              "25",
+              "35",
+              "50",
+              "46",
+              "32",
+              "45"
+            ],
+            "image_urls": [
+              "/images/product_51.jpg",
+              "/images/product_49.jpg",
+              "/images/product_26.jpg",
+              "/images/product_40.jpg",
+              "/images/product_25.jpg",
+              "/images/product_35.jpg",
+              "/images/product_50.jpg",
+              "/images/product_46.jpg",
+              "/images/product_32.jpg",
+              "/images/product_45.jpg"
+            ],
+            "titles": [
+              "Premium Floral Vacation Skirt",
+              "Colorful Casual Skirt",
+              "White Lightweight Summer Shirt",
+              "Green Casual T-Shirt",
+              "White Casual Shirt",
+              "Blue Ripped Distressed Jeans",
+              "Floral Light Skirt Beach Wear",
+              "Brown Leather Jacket",
+              "Brown Trekking Boots",
+              "White Luxury Bridal Heels"
+            ],
+            "scores": [
+              0.5804198384284973,
+              0.6009517312049866,
+              0.6318200826644897,
+              0.6550174951553345,
+              0.6722421050071716,
+              0.6754499077796936,
+              0.6856616735458374,
+              0.6892151832580566,
+              0.7260569334030151,
+              0.7291150093078613
+            ]
+          },
+          "top_3_products": [
+            "/images/product_51.jpg",
+            "/images/product_49.jpg",
+            "/images/product_26.jpg"
+          ],
+          "query_time": 0.21066832542419434
+        },
+        {
+          "input_image": "TC-H17_input_floral_skirt_2.jpg",
+          "search_results": {
+            "query_time": 0.20294475555419922,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "51",
+              "49",
+              "50",
+              "26",
+              "32",
+              "2",
+              "25",
+              "40",
+              "46",
+              "35"
+            ],
+            "image_urls": [
+              "/images/product_51.jpg",
+              "/images/product_49.jpg",
+              "/images/product_50.jpg",
+              "/images/product_26.jpg",
+              "/images/product_32.jpg",
+              "/images/product_2.jpg",
+              "/images/product_25.jpg",
+              "/images/product_40.jpg",
+              "/images/product_46.jpg",
+              "/images/product_35.jpg"
+            ],
+            "titles": [
+              "Premium Floral Vacation Skirt",
+              "Colorful Casual Skirt",
+              "Floral Light Skirt Beach Wear",
+              "White Lightweight Summer Shirt",
+              "Brown Trekking Boots",
+              "Red Floral Print Party Dress",
+              "White Casual Shirt",
+              "Green Casual T-Shirt",
+              "Brown Leather Jacket",
+              "Blue Ripped Distressed Jeans"
+            ],
+            "scores": [
+              0.5306252241134644,
+              0.5499944090843201,
+              0.6343854069709778,
+              0.6697307229042053,
+              0.6800696849822998,
+              0.6859339475631714,
+              0.7017819881439209,
+              0.7144863605499268,
+              0.7182310819625854,
+              0.7221963405609131
+            ]
+          },
+          "top_3_products": [
+            "/images/product_51.jpg",
+            "/images/product_49.jpg",
+            "/images/product_50.jpg"
+          ],
+          "query_time": 0.20294475555419922
+        },
+        {
+          "input_image": "TC-H17_input_floral_skirt_3.png",
+          "search_results": {
+            "query_time": 0.5443482398986816,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "34",
+              "35",
+              "9",
+              "46",
+              "8",
+              "7",
+              "45",
+              "33",
+              "26",
+              "25"
+            ],
+            "image_urls": [
+              "/images/product_34.jpg",
+              "/images/product_35.jpg",
+              "/images/product_9.jpg",
+              "/images/product_46.jpg",
+              "/images/product_8.jpg",
+              "/images/product_7.jpg",
+              "/images/product_45.jpg",
+              "/images/product_33.jpg",
+              "/images/product_26.jpg",
+              "/images/product_25.jpg"
+            ],
+            "titles": [
+              "Blue Casual Jeans",
+              "Blue Ripped Distressed Jeans",
+              "Black Printed Streetwear Tee",
+              "Brown Leather Jacket",
+              "Black Graphic Streetwear T-Shirt",
+              "Black Plain T-Shirt",
+              "White Luxury Bridal Heels",
+              "Brown Premium Hiking Boots",
+              "White Lightweight Summer Shirt",
+              "White Casual Shirt"
+            ],
+            "scores": [
+              0.5128364562988281,
+              0.5643328428268433,
+              0.5691653490066528,
+              0.5818384885787964,
+              0.598432719707489,
+              0.6003098487854004,
+              0.6053107380867004,
+              0.613274335861206,
+              0.6207929849624634,
+              0.6290969848632812
+            ]
+          },
+          "top_3_products": [
+            "/images/product_34.jpg",
+            "/images/product_35.jpg",
+            "/images/product_9.jpg"
+          ],
+          "query_time": 0.5443482398986816
+        }
+      ]
+    },
+    {
+      "id": "TC-H18",
+      "description": "navy_suit",
+      "text_query": "formal job interview suit",
+      "alpha": 0.65,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H18_input_navy_suit_1.jpg",
+          "search_results": {
+            "query_time": 0.20225858688354492,
+            "search_type": "hybrid",
+            "alpha_used": 0.65,
+            "total_results": 10,
+            "product_ids": [
+              "48",
+              "6",
+              "23",
+              "4",
+              "22",
+              "44",
+              "14",
+              "24",
+              "3",
+              "52"
+            ],
+            "image_urls": [
+              "/images/product_48.jpg",
+              "/images/product_6.jpg",
+              "/images/product_23.jpg",
+              "/images/product_4.jpg",
+              "/images/product_22.jpg",
+              "/images/product_44.jpg",
+              "/images/product_14.jpg",
+              "/images/product_24.jpg",
+              "/images/product_3.jpg",
+              "/images/product_52.jpg"
+            ],
+            "titles": [
+              "Black Premium Biker Leather Jacket",
+              "Navy Formal Office Blazer",
+              "Black Smart Casual Blazer",
+              "Blue Denim Jacket",
+              "Black Casual Blazer",
+              "White Bridal Wedding Heels",
+              "Black Leather Formal Shoes",
+              "Black Premium Evening Blazer",
+              "Red Velvet Wedding Dress",
+              "Navy Formal Blazer"
+            ],
+            "scores": [
+              0.6662821173667908,
+              0.6908704042434692,
+              0.6936756372451782,
+              0.710951566696167,
+              0.7260842323303223,
+              0.7459605932235718,
+              0.7506328821182251,
+              0.7731425166130066,
+              0.7822798490524292,
+              0.7923793196678162
+            ]
+          },
+          "top_3_products": [
+            "/images/product_48.jpg",
+            "/images/product_6.jpg",
+            "/images/product_23.jpg"
+          ],
+          "query_time": 0.20225858688354492
+        },
+        {
+          "input_image": "TC-H18_input_navy_suit_2.jpg",
+          "search_results": {
+            "query_time": 0.21136879920959473,
+            "search_type": "hybrid",
+            "alpha_used": 0.65,
+            "total_results": 10,
+            "product_ids": [
+              "47",
+              "23",
+              "52",
+              "48",
+              "6",
+              "30",
+              "36",
+              "4",
+              "22",
+              "35"
+            ],
+            "image_urls": [
+              "/images/product_47.jpg",
+              "/images/product_23.jpg",
+              "/images/product_52.jpg",
+              "/images/product_48.jpg",
+              "/images/product_6.jpg",
+              "/images/product_30.jpg",
+              "/images/product_36.jpg",
+              "/images/product_4.jpg",
+              "/images/product_22.jpg",
+              "/images/product_35.jpg"
+            ],
+            "titles": [
+              "Black Biker Leather Jacket",
+              "Black Smart Casual Blazer",
+              "Navy Formal Blazer",
+              "Black Premium Biker Leather Jacket",
+              "Navy Formal Office Blazer",
+              "Pink Elegant Cocktail Dress",
+              "Blue Premium Ripped Street Jeans",
+              "Blue Denim Jacket",
+              "Black Casual Blazer",
+              "Blue Ripped Distressed Jeans"
+            ],
+            "scores": [
+              0.3715668320655823,
+              0.5276825428009033,
+              0.5500278472900391,
+              0.5520205497741699,
+              0.5713040828704834,
+              0.6005845069885254,
+              0.6238662004470825,
+              0.6337155103683472,
+              0.6419251561164856,
+              0.6458898782730103
+            ]
+          },
+          "top_3_products": [
+            "/images/product_47.jpg",
+            "/images/product_23.jpg",
+            "/images/product_52.jpg"
+          ],
+          "query_time": 0.21136879920959473
+        }
+      ]
+    },
+    {
+      "id": "TC-H19",
+      "description": "red_hoodie",
+      "text_query": "sports activewear hoodie",
+      "alpha": 0.6,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H19_input_red_hoodie_1.jpg",
+          "search_results": {
+            "query_time": 0.22765374183654785,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "23",
+              "18",
+              "49",
+              "36",
+              "51",
+              "32",
+              "13",
+              "22",
+              "52",
+              "47"
+            ],
+            "image_urls": [
+              "/images/product_23.jpg",
+              "/images/product_18.jpg",
+              "/images/product_49.jpg",
+              "/images/product_36.jpg",
+              "/images/product_51.jpg",
+              "/images/product_32.jpg",
+              "/images/product_13.jpg",
+              "/images/product_22.jpg",
+              "/images/product_52.jpg",
+              "/images/product_47.jpg"
+            ],
+            "titles": [
+              "Black Smart Casual Blazer",
+              "Grey Premium Winter Hoodie",
+              "Colorful Casual Skirt",
+              "Blue Premium Ripped Street Jeans",
+              "Premium Floral Vacation Skirt",
+              "Brown Trekking Boots",
+              "White Casual Sneakers",
+              "Black Casual Blazer",
+              "Navy Formal Blazer",
+              "Black Biker Leather Jacket"
+            ],
+            "scores": [
+              0.5766288638114929,
+              0.5773463845252991,
+              0.5823495984077454,
+              0.5941571593284607,
+              0.6004623174667358,
+              0.6060056686401367,
+              0.6255752444267273,
+              0.64615797996521,
+              0.6565646529197693,
+              0.6618494987487793
+            ]
+          },
+          "top_3_products": [
+            "/images/product_23.jpg",
+            "/images/product_18.jpg",
+            "/images/product_49.jpg"
+          ],
+          "query_time": 0.22765374183654785
+        },
+        {
+          "input_image": "TC-H19_input_red_hoodie_2.jpg",
+          "search_results": {
+            "query_time": 0.17750835418701172,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "13",
+              "51",
+              "36",
+              "23",
+              "49",
+              "18",
+              "52",
+              "32",
+              "47",
+              "48"
+            ],
+            "image_urls": [
+              "/images/product_13.jpg",
+              "/images/product_51.jpg",
+              "/images/product_36.jpg",
+              "/images/product_23.jpg",
+              "/images/product_49.jpg",
+              "/images/product_18.jpg",
+              "/images/product_52.jpg",
+              "/images/product_32.jpg",
+              "/images/product_47.jpg",
+              "/images/product_48.jpg"
+            ],
+            "titles": [
+              "White Casual Sneakers",
+              "Premium Floral Vacation Skirt",
+              "Blue Premium Ripped Street Jeans",
+              "Black Smart Casual Blazer",
+              "Colorful Casual Skirt",
+              "Grey Premium Winter Hoodie",
+              "Navy Formal Blazer",
+              "Brown Trekking Boots",
+              "Black Biker Leather Jacket",
+              "Black Premium Biker Leather Jacket"
+            ],
+            "scores": [
+              0.5696946978569031,
+              0.615537166595459,
+              0.6173646450042725,
+              0.6296931505203247,
+              0.632365345954895,
+              0.6361786127090454,
+              0.6416407823562622,
+              0.6497200727462769,
+              0.6840436458587646,
+              0.6877312660217285
+            ]
+          },
+          "top_3_products": [
+            "/images/product_13.jpg",
+            "/images/product_51.jpg",
+            "/images/product_36.jpg"
+          ],
+          "query_time": 0.17750835418701172
+        },
+        {
+          "input_image": "TC-H19_input_red_hoodie_3.jpg",
+          "search_results": {
+            "query_time": 0.1952803134918213,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "13",
+              "36",
+              "51",
+              "23",
+              "32",
+              "49",
+              "18",
+              "52",
+              "15",
+              "22"
+            ],
+            "image_urls": [
+              "/images/product_13.jpg",
+              "/images/product_36.jpg",
+              "/images/product_51.jpg",
+              "/images/product_23.jpg",
+              "/images/product_32.jpg",
+              "/images/product_49.jpg",
+              "/images/product_18.jpg",
+              "/images/product_52.jpg",
+              "/images/product_15.jpg",
+              "/images/product_22.jpg"
+            ],
+            "titles": [
+              "White Casual Sneakers",
+              "Blue Premium Ripped Street Jeans",
+              "Premium Floral Vacation Skirt",
+              "Black Smart Casual Blazer",
+              "Brown Trekking Boots",
+              "Colorful Casual Skirt",
+              "Grey Premium Winter Hoodie",
+              "Navy Formal Blazer",
+              "Black Premium Leather Shoes",
+              "Black Casual Blazer"
+            ],
+            "scores": [
+              0.5621467232704163,
+              0.5842546224594116,
+              0.5848912000656128,
+              0.612663984298706,
+              0.6256135702133179,
+              0.6315724849700928,
+              0.6382113695144653,
+              0.6544806361198425,
+              0.6605207920074463,
+              0.6697872877120972
+            ]
+          },
+          "top_3_products": [
+            "/images/product_13.jpg",
+            "/images/product_36.jpg",
+            "/images/product_51.jpg"
+          ],
+          "query_time": 0.1952803134918213
+        }
+      ]
+    },
+    {
+      "id": "TC-H20",
+      "description": "beige_coat",
+      "text_query": "luxury winter overcoat premium",
+      "alpha": 0.6,
+      "status": "completed",
+      "results": [
+        {
+          "input_image": "TC-H20_input_beige_coat_1.jpg",
+          "search_results": {
+            "query_time": 0.19262480735778809,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "52",
+              "23",
+              "48",
+              "46",
+              "22",
+              "6",
+              "3",
+              "47",
+              "19",
+              "26"
+            ],
+            "image_urls": [
+              "/images/product_52.jpg",
+              "/images/product_23.jpg",
+              "/images/product_48.jpg",
+              "/images/product_46.jpg",
+              "/images/product_22.jpg",
+              "/images/product_6.jpg",
+              "/images/product_3.jpg",
+              "/images/product_47.jpg",
+              "/images/product_19.jpg",
+              "/images/product_26.jpg"
+            ],
+            "titles": [
+              "Navy Formal Blazer",
+              "Black Smart Casual Blazer",
+              "Black Premium Biker Leather Jacket",
+              "Brown Leather Jacket",
+              "Black Casual Blazer",
+              "Navy Formal Office Blazer",
+              "Red Velvet Wedding Dress",
+              "Black Biker Leather Jacket",
+              "Yellow Casual Kurti",
+              "White Lightweight Summer Shirt"
+            ],
+            "scores": [
+              0.3807395100593567,
+              0.5125041007995605,
+              0.5610886812210083,
+              0.5658093690872192,
+              0.5923135280609131,
+              0.6219426393508911,
+              0.6249643564224243,
+              0.640958309173584,
+              0.643014669418335,
+              0.6643739938735962
+            ]
+          },
+          "top_3_products": [
+            "/images/product_52.jpg",
+            "/images/product_23.jpg",
+            "/images/product_48.jpg"
+          ],
+          "query_time": 0.19262480735778809
+        },
+        {
+          "input_image": "TC-H20_input_beige_coat_2.jpg",
+          "search_results": {
+            "query_time": 0.2030951976776123,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "52",
+              "23",
+              "46",
+              "48",
+              "22",
+              "3",
+              "19",
+              "6",
+              "26",
+              "18"
+            ],
+            "image_urls": [
+              "/images/product_52.jpg",
+              "/images/product_23.jpg",
+              "/images/product_46.jpg",
+              "/images/product_48.jpg",
+              "/images/product_22.jpg",
+              "/images/product_3.jpg",
+              "/images/product_19.jpg",
+              "/images/product_6.jpg",
+              "/images/product_26.jpg",
+              "/images/product_18.jpg"
+            ],
+            "titles": [
+              "Navy Formal Blazer",
+              "Black Smart Casual Blazer",
+              "Brown Leather Jacket",
+              "Black Premium Biker Leather Jacket",
+              "Black Casual Blazer",
+              "Red Velvet Wedding Dress",
+              "Yellow Casual Kurti",
+              "Navy Formal Office Blazer",
+              "White Lightweight Summer Shirt",
+              "Grey Premium Winter Hoodie"
+            ],
+            "scores": [
+              0.36001795530319214,
+              0.5203906297683716,
+              0.5513440370559692,
+              0.5742746591567993,
+              0.604372501373291,
+              0.6163995862007141,
+              0.6231200098991394,
+              0.6353626251220703,
+              0.6391859650611877,
+              0.6463274955749512
+            ]
+          },
+          "top_3_products": [
+            "/images/product_52.jpg",
+            "/images/product_23.jpg",
+            "/images/product_46.jpg"
+          ],
+          "query_time": 0.2030951976776123
+        },
+        {
+          "input_image": "TC-H20_input_beige_coat_3.jpg",
+          "search_results": {
+            "query_time": 0.18352723121643066,
+            "search_type": "hybrid",
+            "alpha_used": 0.6,
+            "total_results": 10,
+            "product_ids": [
+              "52",
+              "46",
+              "23",
+              "48",
+              "22",
+              "19",
+              "47",
+              "26",
+              "3",
+              "31"
+            ],
+            "image_urls": [
+              "/images/product_52.jpg",
+              "/images/product_46.jpg",
+              "/images/product_23.jpg",
+              "/images/product_48.jpg",
+              "/images/product_22.jpg",
+              "/images/product_19.jpg",
+              "/images/product_47.jpg",
+              "/images/product_26.jpg",
+              "/images/product_3.jpg",
+              "/images/product_31.jpg"
+            ],
+            "titles": [
+              "Navy Formal Blazer",
+              "Brown Leather Jacket",
+              "Black Smart Casual Blazer",
+              "Black Premium Biker Leather Jacket",
+              "Black Casual Blazer",
+              "Yellow Casual Kurti",
+              "Black Biker Leather Jacket",
+              "White Lightweight Summer Shirt",
+              "Red Velvet Wedding Dress",
+              "Brown Casual Boots"
+            ],
+            "scores": [
+              0.3932921886444092,
+              0.5274683237075806,
+              0.5743747353553772,
+              0.5989375114440918,
+              0.6318977475166321,
+              0.6445178389549255,
+              0.6513140797615051,
+              0.6521068215370178,
+              0.6665604710578918,
+              0.6704754829406738
+            ]
+          },
+          "top_3_products": [
+            "/images/product_52.jpg",
+            "/images/product_46.jpg",
+            "/images/product_23.jpg"
+          ],
+          "query_time": 0.18352723121643066
+        }
+      ]
+    }
+  ]
+}

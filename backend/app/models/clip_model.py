@@ -61,13 +61,34 @@ class CLIPModel:
         Encode text to embedding vector
         Automatically truncates text to fit within CLIP's context length (77 tokens).
         """
-        # Truncate text to fit within CLIP's context limit (~77 tokens, ~308 chars)
-        max_length = 250  # Safe buffer for 77 tokens
-        if len(text) > max_length:
-            text = text[:max_length].rsplit(' ', 1)[0] + "..."
+        # CLIP has a context length of 77 tokens (76 + 1 for end-of-sequence)
+        max_tokens = 76
         
-        # Tokenize text
-        text_tokens = clip.tokenize([text]).to(self.device)
+        # Split text into words
+        words = text.split()
+        
+        # Build text incrementally, adding words until we hit the token limit
+        current_text = ""
+        for word in words:
+            test_text = current_text + (" " if current_text else "") + word
+            try:
+                # Test if this text fits within token limit
+                text_tokens = clip.tokenize([test_text]).to(self.device)
+                # If we got here without error, update current_text
+                current_text = test_text
+            except RuntimeError as e:
+                if "too long" in str(e):
+                    # Adding this word would exceed limit, stop here
+                    break
+                else:
+                    raise
+        
+        # Use the truncated text (fallback to at least one word if empty)
+        if not current_text:
+            current_text = words[0] if words else ""
+        
+        # Final tokenization with truncated text
+        text_tokens = clip.tokenize([current_text]).to(self.device)
         
         # Generate embedding
         with torch.no_grad():
