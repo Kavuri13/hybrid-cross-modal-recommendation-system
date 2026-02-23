@@ -32,35 +32,68 @@ export default function OrderDetailsPage({ params }: { params: { order_id: strin
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  // Unwrap params for Next.js 13+
+  const [orderId, setOrderId] = useState<string | null>(null);
+
+  useEffect(() => {
+    // Handle async params in Next.js 13+
+    const unwrapParams = async () => {
+      const resolvedParams = await Promise.resolve(params);
+      setOrderId(resolvedParams.order_id);
+    };
+    unwrapParams();
+  }, [params]);
+
   useEffect(() => {
     if (!isLoading && !isAuthenticated) {
       router.push('/login');
       return;
     }
 
-    if (!isLoading && isAuthenticated) {
+    if (!isLoading && isAuthenticated && orderId) {
       fetchOrder();
     }
-  }, [isLoading, isAuthenticated]);
+  }, [isLoading, isAuthenticated, orderId]);
 
   const fetchOrder = async () => {
+    if (!orderId) return;
+    
     try {
       setLoading(true);
       const token = localStorage.getItem('auth_token');
 
-      const response = await fetch(`${API_URL}/orders/${params.order_id}`, {
+      console.log('Fetching order:', orderId);
+      console.log('Token exists:', !!token);
+
+      const response = await fetch(`${API_URL}/orders/${orderId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'application/json',
         },
       });
 
-      if (!response.ok) throw new Error('Order not found');
+      console.log('Response status:', response.status);
+
+      if (response.status === 401) {
+        localStorage.removeItem('auth_token');
+        localStorage.removeItem('auth_user');
+        setError('Session expired. Please log in again.');
+        setTimeout(() => router.push('/login'), 1500);
+        return;
+      }
+
+      if (!response.ok) {
+        const errorData = await response.text();
+        console.error('Error response:', errorData);
+        throw new Error(`Order not found (${response.status})`);
+      }
 
       const data = await response.json();
+      console.log('Order data:', data);
       setOrder(data);
       setError(null);
     } catch (err: any) {
+      console.error('Fetch order error:', err);
       setError(err.message || 'Failed to load order');
     } finally {
       setLoading(false);
@@ -85,9 +118,33 @@ export default function OrderDetailsPage({ params }: { params: { order_id: strin
             </Link>
           </div>
         </nav>
-        <div className="container mx-auto px-4 py-8 max-w-7xl text-center">
-          <div className="bg-red-500/20 border border-red-500 text-red-300 px-6 py-4 rounded-lg inline-block">
-            {error || 'Order not found'}
+        <div className="container mx-auto px-4 py-8 max-w-7xl">
+          <div className="bg-red-500/20 border border-red-500 rounded-xl p-6 max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-red-300 mb-3">
+              {error || 'Order not found'}
+            </h2>
+            <p className="text-red-200 mb-4">
+              We couldn't find the order you're looking for. This might be because:
+            </p>
+            <ul className="list-disc list-inside text-red-200 mb-6 space-y-1">
+              <li>The order ID is incorrect</li>
+              <li>You don't have permission to view this order</li>
+              <li>Your session has expired</li>
+            </ul>
+            <div className="flex gap-4">
+              <Link
+                href="/orders"
+                className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition"
+              >
+                View All Orders
+              </Link>
+              <Link
+                href="/simple"
+                className="px-6 py-3 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition"
+              >
+                Continue Shopping
+              </Link>
+            </div>
           </div>
         </div>
       </div>

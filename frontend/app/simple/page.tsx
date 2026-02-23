@@ -39,6 +39,7 @@ export default function HybridSearchPage() {
   const [response, setResponse] = useState<SearchResponse | null>(null);
   const [cartLoading, setCartLoading] = useState<string | null>(null);
   const [addedItems, setAddedItems] = useState<Set<string>>(new Set());
+  const [hoveredImage, setHoveredImage] = useState<string | null>(null);
 
   // Handle authentication redirect in useEffect
   useEffect(() => {
@@ -111,7 +112,7 @@ export default function HybridSearchPage() {
         text: textQuery || null,
         image: imageBase64 ? `${imageBase64.substring(0, 50)}...` : null,
         alpha: 0.5,
-        top_k: 10,
+        top_k: 3,
       });
 
       const res = await fetch(`${API_URL}/search`, {
@@ -123,7 +124,7 @@ export default function HybridSearchPage() {
           text: textQuery || null,
           image: imageBase64,
           alpha: 0.5,
-          top_k: 10,
+          top_k: 3,
         }),
       });
 
@@ -149,8 +150,9 @@ export default function HybridSearchPage() {
   const handleAddToCart = async (product: Product) => {
     try {
       setCartLoading(product.product_id);
+      setError(null); // Clear previous errors
       await addToCart({
-        product_id: product.product_id,
+        product_id: String(product.product_id),
         title: product.title,
         price: product.price,
         quantity: 1,
@@ -165,7 +167,9 @@ export default function HybridSearchPage() {
         });
       }, 2000);
     } catch (err: any) {
-      setError(err.message || 'Failed to add to cart');
+      console.error('handleAddToCart error:', err);
+      const errorMsg = err.message || 'Failed to add to cart';
+      setError(`Failed to add "${product.title}" to cart: ${errorMsg}`);
     } finally {
       setCartLoading(null);
     }
@@ -175,7 +179,7 @@ export default function HybridSearchPage() {
     try {
       setCartLoading(product.product_id);
       await addToCart({
-        product_id: product.product_id,
+        product_id: String(product.product_id),
         title: product.title,
         price: product.price,
         quantity: 1,
@@ -293,15 +297,34 @@ export default function HybridSearchPage() {
                   key={product.product_id}
                   className="bg-slate-800/50 backdrop-blur-md rounded-xl border border-slate-700 overflow-hidden hover:border-blue-500 transition flex flex-col"
                 >
-                  <img
-                    src={product.image_url}
-                    alt={product.title}
-                    className="w-full h-48 object-cover"
-                  />
+                  <Link href={`/product/${product.product_id}`}>
+                    <div 
+                      className="relative cursor-zoom-in"
+                      onMouseEnter={() => setHoveredImage(product.product_id)}
+                      onMouseLeave={() => setHoveredImage(null)}
+                    >
+                      <img
+                        src={product.image_url}
+                        alt={product.title}
+                        className="w-full h-48 object-cover transition-transform hover:scale-105"
+                      />
+                      {hoveredImage === product.product_id && (
+                        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm pointer-events-none">
+                          <img
+                            src={product.image_url}
+                            alt={product.title}
+                            className="max-w-[90vw] max-h-[90vh] object-contain rounded-lg shadow-2xl border-4 border-blue-500"
+                          />
+                        </div>
+                      )}
+                    </div>
+                  </Link>
                   <div className="p-4 flex-1 flex flex-col">
-                    <h3 className="text-lg font-semibold text-white mb-2">
-                      {product.title}
-                    </h3>
+                    <Link href={`/product/${product.product_id}`}>
+                      <h3 className="text-lg font-semibold text-white mb-2 hover:text-blue-400 transition cursor-pointer">
+                        {product.title}
+                      </h3>
+                    </Link>
                     <p className="text-gray-400 text-sm mb-3 flex-1">{product.description}</p>
                     <div className="flex justify-between items-center mb-4">
                       <span className="text-blue-400 font-semibold">

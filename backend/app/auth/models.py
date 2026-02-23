@@ -101,16 +101,23 @@ class JSONUserStore:
     """JSON-based user storage"""
     
     def __init__(self):
-        # Get data directory
+        # Prefer the project root (has PROJECT_CONFIG.json or docker-compose.yml) for shared data.
         repo_root = None
-        for parent in [Path(__file__).resolve()] + list(Path(__file__).resolve().parents):
-            if (parent / "data").exists():
+        file_path = Path(__file__).resolve()
+        for parent in [file_path] + list(file_path.parents):
+            if (parent / "PROJECT_CONFIG.json").exists() or (parent / "docker-compose.yml").exists():
                 repo_root = parent
                 break
-        
+
         if repo_root is None:
-            repo_root = Path(__file__).resolve().parents[3]  # backend/app/auth -> project root
-        
+            for parent in [file_path] + list(file_path.parents):
+                if (parent / "data").exists():
+                    repo_root = parent
+                    break
+
+        if repo_root is None:
+            repo_root = file_path.parents[3]  # backend/app/auth -> project root
+
         self.data_dir = repo_root / "data"
         self.users_file = self.data_dir / "users.json"
         

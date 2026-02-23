@@ -47,6 +47,13 @@ export function CartProvider({ children }: { children: ReactNode }) {
         },
       });
 
+      if (response.status === 401) {
+        // Token expired or invalid - clear and redirect
+        localStorage.removeItem('auth_token');
+        localStorage.removeItem('auth_user');
+        return;
+      }
+
       if (!response.ok) throw new Error('Failed to fetch cart');
 
       const data = await response.json();
@@ -65,7 +72,15 @@ export function CartProvider({ children }: { children: ReactNode }) {
     try {
       setLoading(true);
       const token = localStorage.getItem('auth_token');
-      if (!token) throw new Error('Not authenticated');
+      if (!token) {
+        const err = new Error('Please log in to add items to cart');
+        setError(err.message);
+        throw err;
+      }
+
+      console.log('Adding to cart:', item);
+      console.log('API URL:', `${API_URL}/cart/add`);
+      console.log('Token exists:', !!token);
 
       const response = await fetch(`${API_URL}/cart/add`, {
         method: 'POST',
@@ -76,14 +91,33 @@ export function CartProvider({ children }: { children: ReactNode }) {
         body: JSON.stringify(item),
       });
 
-      if (!response.ok) throw new Error('Failed to add to cart');
+      console.log('Cart add response status:', response.status);
+
+      if (response.status === 401) {
+        // Token expired or invalid
+        localStorage.removeItem('auth_token');
+        localStorage.removeItem('auth_user');
+        const err = new Error('Session expired. Please log in again.');
+        setError(err.message);
+        // Reload page to trigger redirect to login
+        setTimeout(() => window.location.href = '/login', 1500);
+        throw err;
+      }
+
+      if (!response.ok) {
+        const errorData = await response.text();
+        console.error('Cart add error:', errorData);
+        throw new Error(`Failed to add to cart: ${response.status} - ${errorData}`);
+      }
 
       const data = await response.json();
+      console.log('Cart updated:', data);
       setItems(data.items || []);
       setTotalPrice(data.total_price || 0);
       setItemCount(data.item_count || 0);
       setError(null);
     } catch (err: any) {
+      console.error('addToCart error:', err);
       setError(err.message);
       throw err;
     } finally {

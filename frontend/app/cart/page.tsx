@@ -68,6 +68,8 @@ export default function CartPage() {
       setError(null);
       const token = localStorage.getItem('auth_token');
 
+      console.log('Processing checkout...');
+
       const response = await fetch(`${API_URL}/orders/checkout`, {
         method: 'POST',
         headers: {
@@ -77,20 +79,35 @@ export default function CartPage() {
         body: JSON.stringify(formData),
       });
 
+      console.log('Checkout response status:', response.status);
+
+      if (response.status === 401) {
+        localStorage.removeItem('auth_token');
+        localStorage.removeItem('auth_user');
+        setError('Session expired. Please log in again.');
+        setTimeout(() => router.push('/login'), 1500);
+        return;
+      }
+
       if (!response.ok) {
         const data = await response.json();
+        console.error('Checkout error:', data);
         throw new Error(data.detail || 'Checkout failed');
       }
 
       const order = await response.json();
+      console.log('Order created:', order);
+      console.log('Order ID:', order.order_id);
       setSuccess(true);
       setShowCheckout(false);
       
       // Redirect to order confirmation after 2 seconds
       setTimeout(() => {
+        console.log('Redirecting to order:', `/orders/${order.order_id}`);
         router.push(`/orders/${order.order_id}`);
       }, 2000);
     } catch (err: any) {
+      console.error('Checkout error:', err);
       setError(err.message || 'Checkout failed');
     } finally {
       setLoading(false);

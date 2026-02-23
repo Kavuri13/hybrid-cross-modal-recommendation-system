@@ -1,0 +1,63 @@
+{
+  "7be633d9-3fb1-45fc-a541-df9318223ba1": [
+    {
+      "order_id": "42173b75",
+      "user_id": "7be633d9-3fb1-45fc-a541-df9318223ba1",
+      "items": [
+        {
+          "product_id": "2",
+          "title": "Red Floral Print Party Dress",
+          "price": 3299.0,
+          "quantity": 1,
+          "image_url": "/images/product_2.jpg"
+        }
+      ],
+      "total_price": 3299.0,
+      "shipping_address": "4-81,main street",
+      "shipping_city": "Srikakulam",
+      "shipping_zip": "532290",
+      "status": "pending",
+      "created_at": "2026-02-23T03:24:14.340911"
+    },
+    {
+      "order_id": "5b93773a",
+      "user_id": "7be633d9-3fb1-45fc-a541-df9318223ba1",
+      "items": [
+        {
+          "product_id": "1",
+          "title": "Red Sleeveless Party Dress",
+          "price": 1999.0,
+          "quantity": 1,
+          "image_url": "/images/product_1.jpg"
+        }
+      ],
+      "total_price": 1999.0,
+      "shipping_address": "4-81,main street",
+      "shipping_city": "Srikakulam",
+      "shipping_zip": "532290",
+      "status": "pending",
+      "created_at": "2026-02-23T03:55:32.019929"
+    }
+  ],
+  "0da460f8-8b68-4182-85a3-45290835b7db": [
+    {
+      "order_id": "224ed333",
+      "user_id": "0da460f8-8b68-4182-85a3-45290835b7db",
+      "items": [
+        {
+          "product_id": "2",
+          "title": "Red Floral Print Party Dress",
+          "price": 3299.0,
+          "quantity": 1,
+          "image_url": "/images/product_2.jpg"
+        }
+      ],
+      "total_price": 3299.0,
+      "shipping_address": "Dr-no 26-46-20,chaitanya nagar,Gajuwaka",
+      "shipping_city": "Vishakhapatnam",
+      "shipping_zip": "530026",
+      "status": "pending",
+      "created_at": "2026-02-23T04:25:00.805118"
+    }
+  ]
+}

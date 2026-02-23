@@ -48,6 +48,9 @@ export default function OrdersPage() {
       setLoading(true);
       const token = localStorage.getItem('auth_token');
 
+      console.log('Fetching orders list');
+      console.log('Token exists:', !!token);
+
       const response = await fetch(`${API_URL}/orders/`, {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -55,12 +58,27 @@ export default function OrdersPage() {
         },
       });
 
-      if (!response.ok) throw new Error('Failed to fetch orders');
+      console.log('Orders response status:', response.status);
+
+      if (response.status === 401) {
+        localStorage.removeItem('auth_token');
+        localStorage.removeItem('auth_user');
+        router.push('/login');
+        return;
+      }
+
+      if (!response.ok) {
+        const errorData = await response.text();
+        console.error('Error fetching orders:', errorData);
+        throw new Error('Failed to fetch orders');
+      }
 
       const data = await response.json();
+      console.log('Orders data:', data);
       setOrders(Array.isArray(data) ? data : []);
       setError(null);
     } catch (err: any) {
+      console.error('Fetch orders error:', err);
       setError(err.message || 'Failed to load orders');
     } finally {
       setLoading(false);

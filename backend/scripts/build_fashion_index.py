@@ -130,8 +130,8 @@ async def generate_embeddings(products: list):
     clip_model = CLIPModel(model_name="ViT-B/32")
     embedding_dim = 512
     
-    # Initialize FAISS index
-    faiss_index = FAISSIndex(embedding_dim=embedding_dim, index_type="HNSW")
+    # Initialize FAISS index (don't load existing - we're rebuilding from scratch)
+    faiss_index = FAISSIndex(embedding_dim=embedding_dim, index_type="HNSW", load_existing=False)
     
     # Process in batches
     batch_size = 16

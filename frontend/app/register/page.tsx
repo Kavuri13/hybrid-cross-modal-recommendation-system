@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '../contexts/AuthContext';
 import Link from 'next/link';
@@ -23,9 +23,31 @@ export default function RegisterPage() {
   const [errors, setErrors] = useState<ValidationErrors>({});
   const [isLoading, setIsLoading] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
+  const [toastMessage, setToastMessage] = useState('');
+  const [toastVariant, setToastVariant] = useState<'error' | 'success'>('error');
+  const toastTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   
   const { register } = useAuth();
   const router = useRouter();
+
+  useEffect(() => {
+    return () => {
+      if (toastTimeoutRef.current) {
+        clearTimeout(toastTimeoutRef.current);
+      }
+    };
+  }, []);
+
+  const showToast = (message: string, variant: 'error' | 'success') => {
+    setToastMessage(message);
+    setToastVariant(variant);
+    if (toastTimeoutRef.current) {
+      clearTimeout(toastTimeoutRef.current);
+    }
+    toastTimeoutRef.current = setTimeout(() => {
+      setToastMessage('');
+    }, 3000);
+  };
 
   // Real-time validation
   const validateField = (name: string, value: string) => {
@@ -124,27 +146,15 @@ export default function RegisterPage() {
     try {
       setSuccessMessage('Creating your account...');
       await register(email, password, fullName);
+      showToast('Account created successfully', 'success');
       setSuccessMessage('✓ Account created successfully! Redirecting...');
       setTimeout(() => {
         router.push('/simple');
       }, 1500);
     } catch (err: any) {
-      const errorMessage = err.message || 'Registration failed. Please try again.';
-      const newErrors: ValidationErrors = {};
-      
-      // Route errors to the correct field based on content
-      if (errorMessage.toLowerCase().includes('password')) {
-        newErrors.password = errorMessage;
-      } else if (errorMessage.toLowerCase().includes('email')) {
-        newErrors.email = errorMessage;
-      } else if (errorMessage.toLowerCase().includes('name')) {
-        newErrors.fullName = errorMessage;
-      } else {
-        newErrors.email = errorMessage; // Default to email for unknown errors
-      }
-      
-      setErrors(newErrors);
+      setErrors({});
       setSuccessMessage('');
+      showToast(err.message || 'Registration failed. Please try again.', 'error');
     } finally {
       setIsLoading(false);
     }
@@ -163,6 +173,15 @@ export default function RegisterPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-neutral-900 flex items-center justify-center px-4 py-12">
+      {toastMessage && (
+        <div
+          className={`fixed bottom-6 right-6 z-50 px-4 py-3 rounded-lg shadow-lg text-sm text-white ${
+            toastVariant === 'success' ? 'bg-green-500/90' : 'bg-red-500/90'
+          }`}
+        >
+          {toastMessage}
+        </div>
+      )}
       <div className="max-w-md w-full space-y-8">
         {/* Header */}
         <div className="text-center">

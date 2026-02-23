@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '../contexts/AuthContext';
 import Link from 'next/link';
@@ -18,9 +18,31 @@ export default function LoginPage() {
   const [errors, setErrors] = useState<ValidationErrors>({});
   const [isLoading, setIsLoading] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
+  const [toastMessage, setToastMessage] = useState('');
+  const [toastVariant, setToastVariant] = useState<'error' | 'success'>('error');
+  const toastTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   
   const { login } = useAuth();
   const router = useRouter();
+
+  useEffect(() => {
+    return () => {
+      if (toastTimeoutRef.current) {
+        clearTimeout(toastTimeoutRef.current);
+      }
+    };
+  }, []);
+
+  const showToast = (message: string, variant: 'error' | 'success') => {
+    setToastMessage(message);
+    setToastVariant(variant);
+    if (toastTimeoutRef.current) {
+      clearTimeout(toastTimeoutRef.current);
+    }
+    toastTimeoutRef.current = setTimeout(() => {
+      setToastMessage('');
+    }, 3000);
+  };
 
   // Real-time validation
   const validateField = (name: string, value: string) => {
@@ -68,15 +90,15 @@ export default function LoginPage() {
     try {
       setSuccessMessage('Signing in...');
       await login(email, password);
+      showToast('Login successful', 'success');
       setSuccessMessage('✓ Login successful! Redirecting...');
       setTimeout(() => {
         router.push('/simple');
       }, 1500);
     } catch (err: any) {
-      setErrors({
-        email: err.message || 'Login failed. Please check your credentials.',
-      });
+      setErrors({});
       setSuccessMessage('');
+      showToast(err.message || 'Login failed. Please check your credentials.', 'error');
     } finally {
       setIsLoading(false);
     }
@@ -86,6 +108,15 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-neutral-900 flex items-center justify-center px-4">
+      {toastMessage && (
+        <div
+          className={`fixed bottom-6 right-6 z-50 px-4 py-3 rounded-lg shadow-lg text-sm text-white ${
+            toastVariant === 'success' ? 'bg-green-500/90' : 'bg-red-500/90'
+          }`}
+        >
+          {toastMessage}
+        </div>
+      )}
       <div className="max-w-md w-full space-y-8">
         {/* Header */}
         <div className="text-center">

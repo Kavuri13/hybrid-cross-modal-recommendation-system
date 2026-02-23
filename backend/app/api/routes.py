@@ -205,3 +205,25 @@ async def get_stats(request: Request):
     
     stats = faiss_index.get_statistics()
     return JSONResponse(stats)
+
+@router.get("/products/{product_id}")
+async def get_product(product_id: str, request: Request):
+    """Get product details by ID"""
+    faiss_index = getattr(request.app.state, 'faiss_index', None)
+    
+    if not faiss_index:
+        raise HTTPException(status_code=503, detail="Index not loaded")
+    
+    try:
+        # Get product from index metadata
+        product = faiss_index.get_product_by_id(product_id)
+        
+        if not product:
+            raise HTTPException(status_code=404, detail=f"Product {product_id} not found")
+        
+        return JSONResponse(product)
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error fetching product {product_id}: {str(e)}", exc_info=True)
+        raise HTTPException(status_code=500, detail=f"Failed to fetch product: {str(e)}")

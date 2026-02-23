@@ -39,6 +39,8 @@ async def add_to_cart(
     """Add item to cart"""
     try:
         user_id = current_user.get("user_id")
+        logger.info(f"Adding to cart for user {user_id}: {request.product_id} - {request.title}")
+        
         item = CartItem(
             product_id=request.product_id,
             title=request.title,
@@ -50,7 +52,7 @@ async def add_to_cart(
         cart_data = CartStore.add_item(user_id, item)
         items = [CartItem(**item) for item in cart_data["items"]]
         
-        logger.info(f"User {user_id} added {request.title} to cart")
+        logger.info(f"User {user_id} successfully added {request.title} to cart. Cart now has {len(items)} items")
         
         return CartResponse(
             user_id=user_id,
@@ -59,8 +61,8 @@ async def add_to_cart(
             item_count=len(items)
         )
     except Exception as e:
-        logger.error(f"Error adding to cart: {e}")
-        raise HTTPException(status_code=500, detail="Failed to add item to cart")
+        logger.error(f"Error adding to cart for user {current_user.get('user_id')}: {str(e)}", exc_info=True)
+        raise HTTPException(status_code=500, detail=f"Failed to add item to cart: {str(e)}")
 
 
 @router.delete("/remove/{product_id}", response_model=CartResponse)
@@ -239,11 +241,21 @@ async def get_order_details(
     """Get specific order details"""
     try:
         user_id = current_user.get("user_id")
+        logger.info(f"Fetching order {order_id} for user {user_id}")
+        
         order = OrderStore.get_order(user_id, order_id)
         
         if not order:
+            logger.warning(f"Order {order_id} not found for user {user_id}")
+            # Log all orders for this user for debugging
+            all_orders = OrderStore.get_user_orders(user_id)
+            logger.info(f"User {user_id} has {len(all_orders)} total orders")
+            if all_orders:
+                order_ids = [o.get('order_id') for o in all_orders]
+                logger.info(f"Available order IDs: {order_ids}")
             raise HTTPException(status_code=404, detail="Order not found")
         
+        logger.info(f"Successfully retrieved order {order_id} for user {user_id}")
         return OrderResponse(
             order_id=order["order_id"],
             user_id=order["user_id"],
@@ -258,7 +270,7 @@ async def get_order_details(
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error retrieving order: {e}")
+        logger.error(f"Error retrieving order {order_id}: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail="Failed to retrieve order")
 
 

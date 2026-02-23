@@ -13,7 +13,7 @@ class FAISSIndex:
     Enhanced with advanced retrieval capabilities from the workflow diagram
     """
     
-    def __init__(self, embedding_dim: int = 512, index_type: str = "HNSW"):
+    def __init__(self, embedding_dim: int = 512, index_type: str = "HNSW", load_existing: bool = True):
         self.embedding_dim = embedding_dim
         self.index_type = index_type
         self.index = None
@@ -31,7 +31,8 @@ class FAISSIndex:
         self.index_path.mkdir(parents=True, exist_ok=True)
         
         self._initialize_index()
-        self._load_existing_index()
+        if load_existing:
+            self._load_existing_index()
     
     def _initialize_index(self):
         """
@@ -221,6 +222,23 @@ class FAISSIndex:
         Get total number of products in the index
         """
         return len(self.product_metadata)
+    
+    def get_product_by_id(self, product_id: str) -> Optional[Dict[str, Any]]:
+        """
+        Get product by ID
+        
+        Args:
+            product_id: Product ID to retrieve
+            
+        Returns:
+            Product metadata dict or None if not found
+        """
+        for metadata in self.product_metadata:
+            if str(metadata.get('product_id')) == str(product_id):
+                return metadata
+        
+        logger.warning(f"Product {product_id} not found in index")
+        return None
     
     def get_statistics(self) -> Dict[str, Any]:
         """
