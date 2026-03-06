@@ -6,7 +6,7 @@ from typing import List, Dict, Any
 import logging
 
 from app.auth.utils import get_current_user
-from app.models.cart import (
+from app.schemas.cart import (
     CartStore, OrderStore, CartItem, CartResponse, 
     AddToCartRequest, CheckoutRequest, OrderResponse, calculate_total_price
 )

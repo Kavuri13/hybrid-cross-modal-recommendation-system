@@ -12,9 +12,9 @@ import logging
 from app.api.routes import router
 from app.api.cart_routes import router as cart_router, order_router
 from app.auth.routes import auth_router
-from app.models.clip_model import CLIPModel
+from app.models.ml.clip_model import CLIPModel
 from app.utils.faiss_index import FAISSIndex
-from app.models.fusion import FusionEngine
+from app.models.ml.fusion import FusionEngine
 
 # Configure logging
 logging.basicConfig(
@@ -92,7 +92,7 @@ async def startup_event():
         
         # Initialize Fusion Engine
         logger.info("Initializing Fusion Engine...")
-        fusion_engine = FusionEngine(default_alpha=0.7)
+        fusion_engine = FusionEngine(default_alpha=0.5)
         app.state.fusion_engine = fusion_engine
         logger.info("✓ Fusion Engine initialized (α=0.7)")
         
@@ -148,10 +148,12 @@ async def root():
     }
 
 if __name__ == "__main__":
+    import os
+    port = int(os.environ.get("PORT", 8001))
     uvicorn.run(
         "app.main:app",
         host="0.0.0.0",
-        port=8000,
+        port=port,
         reload=True,
         log_level="info"
     )

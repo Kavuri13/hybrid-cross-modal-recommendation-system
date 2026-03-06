@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "ignoreDeprecations": "6.0",
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": [
@@ -13,16 +12,13 @@
     "baseUrl": ".",
     "paths": {
       "@/*": [
-        "./app/*"
+        "./src/*"
       ],
       "@/components/*": [
-        "./app/components/*"
+        "./src/components/*"
       ],
       "@/lib/*": [
-        "./app/lib/*"
-      ],
-      "@/types/*": [
-        "./app/types/*"
+        "./src/lib/*"
       ]
     },
     /* Bundler mode */
@@ -49,7 +45,7 @@
     ]
   },
   "include": [
-    "app",
+    "src",
     "next-env.d.ts",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
